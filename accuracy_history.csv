@@ -1,29 +1,46 @@
-transcript,predicted_category,accuracy
-"The autonomous vehicle failed to detect a road closure sign and attempted to drive through a barricaded area, requiring the driver to take control and find an alternative route.",Failed for Lane Position,0.0
-"The autonomous vehicle attempted to make a left turn at an intersection with a ""No Left Turn"" sign, prompting the driver to take control and reroute the vehicle to the correct direction.",Failed to follow Route,100.0
-"The autonomous vehicle attempted to make a left turn at a red light intersection, even though it did not have the right of way.",Failed to Slow,100.0
-"6. The autonomous vehicle attempted to make a left turn at a busy intersection with oncoming traffic, misjudging the gap and risking a collision.",Failed to Slow,100.0
-"The autonomous vehicle failed to detect a road closure sign and tried to proceed through a blocked road, requiring the driver to take over and reroute the vehicle.",Failed for Diversion,100.0
-"6. The vehicle attempted to make a left turn at a red light intersection where left turns are prohibited, prompting the driver to take control and prevent a potential violation or collision.",Failed to Slow,100.0
-6. The autonomous vehicle failed to detect a sudden road closure ahead and continued driving towards the blocked road.,Failed for Lane Position,0.0
-"6. The autonomous vehicle attempted to turn left at a red light intersection where left turns are not allowed, prompting the driver to take control and prevent an illegal maneuver.",Failed to Slow,100.0
-"6. The vehicle attempted to make a left turn at a red light intersection, disregarding the traffic signal.",Failed for Lane Position,0.0
-"Driver: ""So I was cruising on the highway when suddenly the autonomous vehicle I was in started drifting out of its lane without signaling. I quickly had to take control and steer it back into the correct lane before we ended up in the next lane over",Failed for Lane Position,100.0
-"Driver: ""So, I was driving along with the autonomous vehicle doing its thing, when suddenly it started drifting towards the lane on the right without signaling. I noticed this and had to quickly take over control to steer it back into our lane before we",Failed for Lane Position,100.0
-"Driver: ""I was driving down the highway when suddenly the autonomous vehicle I was in started drifting out of its lane. It didn't seem to be detecting the lane markings properly and was slowly moving towards the shoulder. I had to quickly take control and",Failed for Lane Position,100.0
-"Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes for no reason. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but luckily",Failed for Lane Position,0.0
-"Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but thankfully I was able",Failed to Slow,100.0
-"Driver: ""So, I was driving along the highway and suddenly my GPS directed me to take an exit that didn't seem right. I realized it was a mistake when I saw the sign for the wrong city. I had to quickly merge back onto",Failed to Slow,0.0
-"Driver: ""So, I was driving along the highway when suddenly the car in front of me slammed on their brakes without any warning. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but",Failed to Slow,100.0
-"Driver: ""I had to quickly swerve to avoid hitting a pothole that appeared out of nowhere on the road. Sorry for the abrupt movement, but I had to avoid damaging the car.""",Failed to Slow,0.0
-"Driver: ""Sorry officer, I had to intervene because the car in front of me suddenly slammed on their brakes, and I had to swerve to avoid a collision.""",Failed to Slow,100.0
-"Driver: ""I had to intervene because the car's automatic braking system didn't detect the parked car ahead and almost rear-ended it. I had to quickly hit the brakes myself to avoid a collision.""",Failed to Slow,100.0
-"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning. I had to swerve to avoid rear-ending them.""",Failed to Slow,100.0
-"Driver: ""I had to quickly swerve to avoid hitting a pothole in the road. Sorry for the sudden movement!""",Failed for Lane Position,100.0
-"Driver: ""Sorry officer, I had to intervene because my GPS suddenly told me to turn left on a one-way street. I realized the mistake and corrected my course immediately.""",Failed to follow Route,100.0
-"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning. I had to quickly swerve to avoid a rear-end collision.""",Failed to Slow,100.0
-"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran onto the road out of nowhere. I know it was a risky move, but I had to avoid hitting it.""",Failed to Slow,100.0
-"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the double yellow line, but I had to avoid hitting the deer.""",Failed to Slow,100.0
-"Driver: ""Sorry officer, I had to swerve suddenly to avoid hitting a pothole in the road. I didn't see it until the last second.""",Failed for Lane Position,100.0
-"Driver: ""I had to quickly swerve to avoid hitting a pothole that I didn't see until the last second. Sorry about that.""",Failed to Slow,0.0
-"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the center line briefly, but I had to avoid hitting the deer.""",Failed to Slow,100.0
+transcript,predicted_category,accuracy,"transcript
+","
+predicted_category
+"
+"The autonomous vehicle failed to detect a road closure sign and attempted to drive through a barricaded area, requiring the driver to take control and find an alternative route.",Failed for Lane Position,0.0,,
+"The autonomous vehicle attempted to make a left turn at an intersection with a ""No Left Turn"" sign, prompting the driver to take control and reroute the vehicle to the correct direction.",Failed to follow Route,100.0,,
+"The autonomous vehicle attempted to make a left turn at a red light intersection, even though it did not have the right of way.",Failed to Slow,100.0,,
+"6. The autonomous vehicle attempted to make a left turn at a busy intersection with oncoming traffic, misjudging the gap and risking a collision.",Failed to Slow,100.0,,
+"The autonomous vehicle failed to detect a road closure sign and tried to proceed through a blocked road, requiring the driver to take over and reroute the vehicle.",Failed for Diversion,100.0,,
+"6. The vehicle attempted to make a left turn at a red light intersection where left turns are prohibited, prompting the driver to take control and prevent a potential violation or collision.",Failed to Slow,100.0,,
+6. The autonomous vehicle failed to detect a sudden road closure ahead and continued driving towards the blocked road.,Failed for Lane Position,0.0,,
+"6. The autonomous vehicle attempted to turn left at a red light intersection where left turns are not allowed, prompting the driver to take control and prevent an illegal maneuver.",Failed to Slow,100.0,,
+"6. The vehicle attempted to make a left turn at a red light intersection, disregarding the traffic signal.",Failed for Lane Position,0.0,,
+"Driver: ""So I was cruising on the highway when suddenly the autonomous vehicle I was in started drifting out of its lane without signaling. I quickly had to take control and steer it back into the correct lane before we ended up in the next lane over",Failed for Lane Position,100.0,,
+"Driver: ""So, I was driving along with the autonomous vehicle doing its thing, when suddenly it started drifting towards the lane on the right without signaling. I noticed this and had to quickly take over control to steer it back into our lane before we",Failed for Lane Position,100.0,,
+"Driver: ""I was driving down the highway when suddenly the autonomous vehicle I was in started drifting out of its lane. It didn't seem to be detecting the lane markings properly and was slowly moving towards the shoulder. I had to quickly take control and",Failed for Lane Position,100.0,,
+"Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes for no reason. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but luckily",Failed for Lane Position,0.0,,
+"Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but thankfully I was able",Failed to Slow,100.0,,
+"Driver: ""So, I was driving along the highway and suddenly my GPS directed me to take an exit that didn't seem right. I realized it was a mistake when I saw the sign for the wrong city. I had to quickly merge back onto",Failed to Slow,0.0,,
+"Driver: ""So, I was driving along the highway when suddenly the car in front of me slammed on their brakes without any warning. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but",Failed to Slow,100.0,,
+"Driver: ""I had to quickly swerve to avoid hitting a pothole that appeared out of nowhere on the road. Sorry for the abrupt movement, but I had to avoid damaging the car.""",Failed to Slow,0.0,,
+"Driver: ""Sorry officer, I had to intervene because the car in front of me suddenly slammed on their brakes, and I had to swerve to avoid a collision.""",Failed to Slow,100.0,,
+"Driver: ""I had to intervene because the car's automatic braking system didn't detect the parked car ahead and almost rear-ended it. I had to quickly hit the brakes myself to avoid a collision.""",Failed to Slow,100.0,,
+"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning. I had to swerve to avoid rear-ending them.""",Failed to Slow,100.0,,
+"Driver: ""I had to quickly swerve to avoid hitting a pothole in the road. Sorry for the sudden movement!""",Failed for Lane Position,100.0,,
+"Driver: ""Sorry officer, I had to intervene because my GPS suddenly told me to turn left on a one-way street. I realized the mistake and corrected my course immediately.""",Failed to follow Route,100.0,,
+"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning. I had to quickly swerve to avoid a rear-end collision.""",Failed to Slow,100.0,,
+"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran onto the road out of nowhere. I know it was a risky move, but I had to avoid hitting it.""",Failed to Slow,100.0,,
+"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the double yellow line, but I had to avoid hitting the deer.""",Failed to Slow,100.0,,
+"Driver: ""Sorry officer, I had to swerve suddenly to avoid hitting a pothole in the road. I didn't see it until the last second.""",Failed for Lane Position,100.0,,
+"Driver: ""I had to quickly swerve to avoid hitting a pothole that I didn't see until the last second. Sorry about that.""",Failed to Slow,0.0,,
+"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the center line briefly, but I had to avoid hitting the deer.""",Failed to Slow,100.0,,
+"Driver: ""Sorry, I had to quickly swerve to avoid hitting a pothole that came out of nowhere. It was a close call, but I managed to avoid it.""",Failed to Slow,0.0,,
+"Driver: ""I had to quickly swerve to avoid hitting a pothole in the road, sorry for the sudden movement.""",Failed to Slow,0.0,,
+"Driver: ""Sorry officer, I had to swerve suddenly to avoid hitting a deer that ran onto the road. I know it was abrupt, but I had to react quickly to avoid a collision.""",Failed for Lane Position,0.0,,
+"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning, so I had to swerve to avoid rear-ending them. It was a close call, but I managed to avoid a collision.""",Failed to Slow,100.0,,
+"Driver: ""Sorry, I had to quickly swerve to avoid hitting a pothole on the road. Everything's okay though, just had to be cautious there.""",Failed to Slow,0.0,,
+,,0.0,"Driver: ""I had to quickly swerve to avoid hitting a pothole that I didn't see in time. Sorry about that.""",Failed to Slow
+"Driver: ""Sorry officer, I had to swerve suddenly because a squirrel ran out into the road. I didn't want to hit it.""",Failed for Lane Position,100.0,,
+"Driver: ""I had to intervene because the car in front of me suddenly slammed on the brakes without any warning. I had to swerve to avoid a rear-end collision.""",Failed to Slow,100.0,,
+"Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes, and I had to swerve to avoid rear-ending them. It was a close call, but I managed to avoid a collision.""",Failed to Slow,100.0,,
+The vehicle drifted towards the right hand side of the lane towards a cycle lane,Failed for Lane Position,100.0,,
+Vehicle wanted to try to contine through the red light,Failed to remain Stopped,100.0,,
+vehicle isnt keeping up with the vehicle infront,Failed for Lane Position,0.0,,
+vehicle isnt going fast enough for the speed limit,Failed for Lane Position,0.0,,
+wanted to proceed through a red light whilst we were stationary,Failed to remain Stopped,100.0,,

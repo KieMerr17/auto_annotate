@@ -36,7 +36,6 @@ y_pred = classifier.predict(X_test_tfidf)
 
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
-print(f"Model Accuracy: {accuracy * 100:.2f}%")
 
 # Function to save the trained model
 def save_model(model, filename):
@@ -87,26 +86,11 @@ def load_accuracy_history(filename="accuracy_history.csv"):
     except FileNotFoundError:
         return []
 
-# Function to generate a new driving error using GPT
-def generate_random_driving_error():
-    openai.api_key = openai_API_key
-    prompt = """
-    Generate a random very short transcript of a driver explaining a driving error.
-    """
-
-    response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "Generate a driving error that requires a driver to intervene."},
-            {"role": "user", "content": prompt}
-        ],
-        max_tokens=50,
-        temperature=0.7
-    )
-
-    # Extract the driving error from the response
-    driving_error = response['choices'][0]['message']['content'].strip()
-    return driving_error
+# Function to take user input for a new driving error
+def input_driving_error():
+    print("\n- - - New Driving Error - - -\n")
+    transcript = input("Please describe the driving error: ").strip()
+    return transcript
 
 # Function to categorize a new transcript
 def categorize_transcript_ml(transcript, vectorizer, model):
@@ -124,9 +108,9 @@ new_categories = []
 
 # Function to validate the prediction and offer correction
 def validate_prediction(transcript, predicted_category):
-    print("\n---- Category Assessment ----\n")
-    print("Transcript:", transcript)
-    print("Predicted Category:", predicted_category)
+    print("\n- - - Category Assessment - - -\n")
+    print("Transcript:\n", transcript)
+    print("\nPredicted Category:\n", predicted_category)
     
     # Ask the user if the predicted category is correct
     correct = input("Is the prediction correct? (y/n): ").strip().lower()
@@ -140,7 +124,7 @@ def validate_prediction(transcript, predicted_category):
             print(f"{idx}. {category}")
         
         # Let the user choose the correct category by number
-        correct_category_idx = int(input("Enter the number of the correct category (1-9): "))
+        correct_category_idx = int(input("Enter the number of the correct annotation: "))
         correct_category = categories[correct_category_idx - 1]
         
         print(f"Thank you! The correct category is: {correct_category}")
@@ -192,24 +176,35 @@ new_transcripts, new_categories = load_corrections()
 # Load accuracy history if it exists
 accuracy_history = load_accuracy_history()
 
+# Function to calculate the overall accuracy from the history
+def calculate_overall_accuracy(accuracy_history):
+    if len(accuracy_history) == 0:
+        return 0.0
+    total_accuracy = sum([entry['accuracy'] for entry in accuracy_history])
+    overall_accuracy = total_accuracy / len(accuracy_history)
+    return overall_accuracy
+
 # Loop to run the model and ask the user continuously
 def run_model_loop(vectorizer, classifier):
     while True:
-        # Generate a random driving error using GPT instead of selecting from a fixed list
-        random_transcript = generate_random_driving_error()
-        print("\nGenerated Driving Error:", random_transcript)
+        # Get a new driving error from user input
+        user_transcript = input_driving_error()
         
-        # Predict the category for the generated error
-        predicted_category = categorize_transcript_ml(random_transcript, vectorizer, classifier)
-        final_category, accuracy = validate_prediction(random_transcript, predicted_category)
+        # Predict the category for the user's input
+        predicted_category = categorize_transcript_ml(user_transcript, vectorizer, classifier)
+        final_category, accuracy = validate_prediction(user_transcript, predicted_category)
         
         print("\nFinal Category Used:", final_category)
 
         # Store the accuracy in history
-        accuracy_history.append({"transcript": random_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
+        accuracy_history.append({"transcript": user_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
 
         # Save the accuracy history after each prediction
         save_accuracy_history(accuracy_history)
+
+        # Calculate and display the overall accuracy
+        overall_accuracy = calculate_overall_accuracy(accuracy_history)
+        print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}%")
 
         # Retrain the model after each user correction
         retrain_model(vectorizer, classifier, new_transcripts, new_categories)
