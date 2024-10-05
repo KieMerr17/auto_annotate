@@ -1,5 +1,4 @@
 import openai
-from env import openai_API_key
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -8,6 +7,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 from driving_errors import driving_errors, labels
 from categories import categories
+from env import openai_API_key
 
 # Create a DataFrame with driving error examples and their corresponding categories
 data = pd.DataFrame({
