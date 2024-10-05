@@ -1,0 +1,24 @@
+transcript,category
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
+"The autonomous vehicle failed to detect a construction zone ahead and continued at the same speed without slowing down, requiring the driver to take control and safely navigate through the construction area.",Failed to Slow
+"The autonomous vehicle failed to detect a construction zone ahead and continued at the same speed without slowing down, requiring the driver to take control and safely navigate through the construction area.",Failed to Slow
+
