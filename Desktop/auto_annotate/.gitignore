@@ -1,1 +1,15 @@
+<<<<<<< HEAD
 env.py
+=======
+env.py
+>>>>>>> 7cfde71 (lateste stable prediction)
+# Ignore .Trash and Downloads
+.Trash/
+Downloads/
+
+# Ignore user-specific files
+.DS_Store
+.bash_history
+.gitconfig
+.vscode/
+.zsh_history
