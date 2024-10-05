@@ -1,8 +1,0 @@
-transcript,category
-"The autonomous vehicle attempted to make a left turn at a busy intersection where there was oncoming traffic, misjudging the gap and risking a potential collision. The driver had to take over to avoid the dangerous maneuver.",Failed to Slow
-"The autonomous vehicle failed to detect a road closure sign and attempted to drive through a barricaded area, requiring the driver to take control and find an alternative route.",Failed for Diversion
-6. The autonomous vehicle failed to detect a sudden road closure ahead and continued driving towards the blocked road.,Failed for Diversion
-"6. The vehicle attempted to make a left turn at a red light intersection, disregarding the traffic signal.",Failed to remain Stopped
-"Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes for no reason. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but luckily",Failed to Slow
-"Driver: ""So, I was driving along the highway and suddenly my GPS directed me to take an exit that didn't seem right. I realized it was a mistake when I saw the sign for the wrong city. I had to quickly merge back onto",Failed to follow Route
-"Driver: ""I had to quickly swerve to avoid hitting a pothole that appeared out of nowhere on the road. Sorry for the abrupt movement, but I had to avoid damaging the car.""",Failed for Lane Position
