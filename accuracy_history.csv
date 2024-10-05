@@ -23,3 +23,7 @@ transcript,predicted_category,accuracy
 "Driver: ""Sorry officer, I had to intervene because my GPS suddenly told me to turn left on a one-way street. I realized the mistake and corrected my course immediately.""",Failed to follow Route,100.0
 "Driver: ""I had to intervene because the car in front of me suddenly slammed on their brakes without any warning. I had to quickly swerve to avoid a rear-end collision.""",Failed to Slow,100.0
 "Driver: ""Sorry officer, I had to swerve suddenly because a deer ran onto the road out of nowhere. I know it was a risky move, but I had to avoid hitting it.""",Failed to Slow,100.0
+"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the double yellow line, but I had to avoid hitting the deer.""",Failed to Slow,100.0
+"Driver: ""Sorry officer, I had to swerve suddenly to avoid hitting a pothole in the road. I didn't see it until the last second.""",Failed for Lane Position,100.0
+"Driver: ""I had to quickly swerve to avoid hitting a pothole that I didn't see until the last second. Sorry about that.""",Failed to Slow,0.0
+"Driver: ""Sorry officer, I had to swerve suddenly because a deer ran across the road right in front of me. I know I crossed the center line briefly, but I had to avoid hitting the deer.""",Failed to Slow,100.0

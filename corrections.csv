@@ -6,3 +6,4 @@ transcript,category
 "Driver: ""So I was driving along the highway when suddenly the car in front of me slammed on their brakes for no reason. I had to quickly swerve into the next lane to avoid rear-ending them. It was a close call, but luckily",Failed to Slow
 "Driver: ""So, I was driving along the highway and suddenly my GPS directed me to take an exit that didn't seem right. I realized it was a mistake when I saw the sign for the wrong city. I had to quickly merge back onto",Failed to follow Route
 "Driver: ""I had to quickly swerve to avoid hitting a pothole that appeared out of nowhere on the road. Sorry for the abrupt movement, but I had to avoid damaging the car.""",Failed for Lane Position
+"Driver: ""I had to quickly swerve to avoid hitting a pothole that I didn't see until the last second. Sorry about that.""",Failed to Slow
