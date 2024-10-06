@@ -18,3 +18,29 @@ INFO:root:Initial model accuracy: 0.25%
 INFO:root:Initial model accuracy: 0.25%
 INFO:root:Initial model accuracy: 0.25%
 INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:openai:error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:openai:error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Initial model accuracy: 0.25%
+INFO:openai:error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Initial model accuracy: 0.25%
+INFO:openai:error_code=None error_message='This is a chat model and not supported in the v1/completions endpoint. Did you mean to use v1/chat/completions?' error_param=model error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.25%
+INFO:root:Initial model accuracy: 0.43%
+INFO:root:Initial model accuracy: 0.62%
+INFO:root:Initial model accuracy: 0.94%

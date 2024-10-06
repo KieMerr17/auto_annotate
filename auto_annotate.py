@@ -1,4 +1,3 @@
-import openai
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -7,7 +6,6 @@ from sklearn.metrics import accuracy_score
 import pickle
 from driving_errors import driving_errors, labels
 from categories import categories
-from env import openai_API_key
 import logging
 
 # Configure logging
@@ -18,6 +16,25 @@ data = pd.DataFrame({
     'transcript': driving_errors,
     'category': labels
 })
+
+# Function to load existing data from CSV and handle potential parsing errors
+def load_existing_data(filename="data.csv"):
+    try:
+        # Use on_bad_lines='skip' to skip bad lines
+        existing_data = pd.read_csv(filename, on_bad_lines='skip')  
+        return existing_data
+    except FileNotFoundError:
+        print("No existing data file found, starting fresh.")
+        return pd.DataFrame()  # Return empty DataFrame
+    except pd.errors.ParserError as e:
+        print(f"Error parsing the CSV file: {e}")
+        return pd.DataFrame()  # Return empty DataFrame
+
+# Load the existing data
+existing_data = load_existing_data("data.csv")
+
+# Combine the existing data with the initial data
+data = pd.concat([data, existing_data], ignore_index=True)
 
 # Split the data into features (transcripts) and labels (categories)
 X = data['transcript']
@@ -159,6 +176,9 @@ def self_learn(transcript, final_category):
     global data
     data = pd.concat([data, additional_data], ignore_index=True)
 
+    # Save the updated data to the CSV file
+    data.to_csv("data.csv", index=False)
+
     # Re-vectorize the full dataset
     X_full = data['transcript']
     y_full = data['category']
@@ -198,13 +218,7 @@ def run_model_loop(vectorizer, classifier):
 
         # Calculate and display the overall accuracy
         overall_accuracy = calculate_overall_accuracy(accuracy_history)
-        print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}%")
-
-        # Ask if the user wants to try another transcript
-        continue_running = input("\nDo you want to categorize another driving error? (y/n): ").strip().lower()
-        if continue_running != 'y':
-            print("Exiting program. Goodbye!")
-            break
+        print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}% \n")
 
 # Run the model loop
 run_model_loop(vectorizer, classifier)
