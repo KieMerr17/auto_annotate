@@ -8,6 +8,10 @@ import pickle
 from driving_errors import driving_errors, labels
 from categories import categories
 from env import openai_API_key
+import logging
+
+# Configure logging
+logging.basicConfig(filename='model.log', level=logging.INFO)
 
 # Create a DataFrame with driving error examples and their corresponding categories
 data = pd.DataFrame({
@@ -36,6 +40,7 @@ y_pred = classifier.predict(X_test_tfidf)
 
 # Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
+logging.info(f'Initial model accuracy: {accuracy:.2f}%')
 
 # Function to save the trained model
 def save_model(model, filename):
@@ -162,6 +167,10 @@ def retrain_model(vectorizer, classifier, new_transcripts, new_categories):
         save_vectorizer(vectorizer, "vectorizer.pkl")
         save_corrections(new_transcripts, new_categories)
 
+        # Clear new transcripts and categories after retraining
+        new_transcripts.clear()
+        new_categories.clear()
+
 # Load model and vectorizer if they exist
 try:
     classifier = load_model("model.pkl")
@@ -206,8 +215,9 @@ def run_model_loop(vectorizer, classifier):
         overall_accuracy = calculate_overall_accuracy(accuracy_history)
         print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}%")
 
-        # Retrain the model after each user correction
-        retrain_model(vectorizer, classifier, new_transcripts, new_categories)
+        # Check if we have enough new corrections to retrain
+        if len(new_transcripts) >= 1:  # Retrain after 5 corrections
+            retrain_model(vectorizer, classifier, new_transcripts, new_categories)
 
         # Ask if the user wants to try another transcript
         continue_running = input("\nDo you want to categorize another driving error? (y/n): ").strip().lower()
