@@ -263,3 +263,23 @@ going too quick,Failed to maintain Speed
 didnt increase the speed when speed limit changed,Failed to maintain Speed
 didnt slow down with a speed limit change,Failed to Slow
 didnt slow down when speed limit changed,Failed to Slow
+failed to turn right,Failed to follow Route
+didnt slow for the vehicle ahead,Failed to Slow
+not slowing for oncoming vehicle,Failed to Slow
+trouble taking up the right lane for the turn,Failed to follow Route
+failed to follow the right direction,Failed to follow Route
+diversion ahead,Failed for Diversion
+road ahead closed,Failed for Diversion
+road closed,Failed for Diversion
+diverting,Failed for Diversion
+didnt turn when required,Failed to follow Route
+failed to proceed,Failed to Accelerate
+didnt move at green light,Failed to Accelerate
+oversteer,Failed for Late Turn
+error maintaining its lane position,Failed for Lane Position
+going towards the left of the lane,Failed for Lane Position
+drifting in lane,Failed for Lane Position
+going towards the kerb on a bend,Failed for Lane Position
+going towards the centre line,Failed for Lane Position
+slow vehicle,Failed to Slow
+accelerate green light,Failed to Accelerate

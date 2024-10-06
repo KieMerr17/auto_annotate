@@ -4,18 +4,11 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import pickle
-from driving_errors import driving_errors, labels
-from categories import categories
 import logging
+from categories import categories
 
 # Configure logging
 logging.basicConfig(filename='model.log', level=logging.INFO)
-
-# Create a DataFrame with driving error examples and their corresponding categories
-data = pd.DataFrame({
-    'transcript': driving_errors,
-    'category': labels
-})
 
 # Function to load existing data from CSV and handle potential parsing errors
 def load_existing_data(filename="data.csv"):
@@ -24,14 +17,13 @@ def load_existing_data(filename="data.csv"):
         return existing_data
     except FileNotFoundError:
         print("No existing data file found, starting fresh.")
-        return pd.DataFrame()  # Return empty DataFrame
+        return pd.DataFrame(columns=['transcript', 'category'])  # Return empty DataFrame with columns
     except pd.errors.ParserError as e:
         print(f"Error parsing the CSV file: {e}")
-        return pd.DataFrame()  # Return empty DataFrame
+        return pd.DataFrame(columns=['transcript', 'category'])  # Return empty DataFrame with columns
 
-# Load the existing data
-existing_data = load_existing_data("data.csv")
-data = pd.concat([data, existing_data], ignore_index=True)
+# Load existing data
+data = load_existing_data("data.csv")
 
 # Split the data into features and labels
 X = data['transcript']
@@ -85,6 +77,7 @@ def categorize_transcript_ml(transcript, vectorizer, model):
     predicted_category = model.predict(transcript_tfidf)[0]
     return predicted_category
 
+# Load model and vectorizer, if available
 try:
     classifier = load_model("model.pkl")
     vectorizer = load_vectorizer("vectorizer.pkl")
@@ -139,11 +132,7 @@ def validate_prediction(transcript, predicted_category):
 
 def self_learn(transcript, final_category):
     # Load existing data
-    try:
-        existing_data = pd.read_csv("data.csv")
-    except FileNotFoundError:
-        # If no file exists, create an empty DataFrame
-        existing_data = pd.DataFrame(columns=['transcript', 'category'])
+    existing_data = load_existing_data("data.csv")
 
     # Create a new DataFrame for the new entry
     additional_data = pd.DataFrame({'transcript': [transcript], 'category': [final_category]})
