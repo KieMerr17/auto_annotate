@@ -293,3 +293,11 @@ drivers fault,Accidental Disengagement
 failed to engage,Accidental Disengagement
 drivers fault,Accidental Disengagement
 driver error,Accidental Disengagement
+failed engagement,Accidental Disengagement
+error by driver,Accidental Disengagement
+driver error,Accidental Disengagement
+driver error,Accidental Disengagement
+failed to turn right when we had a green light,Failed to Accelerate
+didnt turn right at green light,Failed to Accelerate
+didnt turn right,Failed to follow Route
+didnt move away and turn when we had green light,Failed to Accelerate
