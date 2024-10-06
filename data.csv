@@ -1,337 +1,264 @@
-transcript,category
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Lane Position
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
-The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
-"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
-The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
-The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
-"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
-The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
-The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
-"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
-The vehicle drifted into the next lane without signaling.,Failed for Route
-The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to Slow
-The vehicle ignored a yield sign and proceeded without caution.,Failed to remain Stopped
-The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
-The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to remain Stopped
-The vehicle did not come to a complete stop at a red light.,Failed to Slow
-The vehicle missed a turn and attempted to proceed.,Failed to follow Route
-The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
-The vehicle wanted to speed through a yellow light instead of slowing down.,Failed to Slow
-The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
-The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
-The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
-The autonomous vehicle misjudged the distance to a pedestrian crossing and did not slow down as it approached.,Failed to Slow
-oversteer,Failed for Late Turn
-oversteered,Failed for Late Turn
-didnt take plotted turn,Failed to follow Route
-didnt take the turn,Failed to follow Route
-failed to turn right,Failed to follow Route
-failed left turn,Failed to follow Route
-understeer,Failed for Early Turn
-turned towards the kerb too soon,Failed for Early Turn
-oversteered,Failed for Late Turn
-oversteered and went towards a parked vehicle,Failed for Late Turn
-turned way too soon,Failed for Early Turn
-the model failed to turn left,Failed to follow Route
-going towards the left lane,Failed for Lane Position
-not moving into the correct lane for upcoming turn,Failed to follow Route
-failing to stay still,Failed to remain Stopped
-didnt turn when required,Failed to follow Route
-oversteer,Failed for Late Turn
-turned too soon toward the kerb,Failed for Early Turn
-didnt turn enough,Failed for Late Turn
-didnt turn enough,Failed for Late Turn
-didnt turn,Failed to follow Route
-didnt turn,Failed to follow Route
-didnt turn,Failed to follow Route
-didnt turn,Failed to follow Route
-failed to move off at a green light,Failed to Accelerate
-failed to move off,Failed to Accelerate
-failed to pull away,Failed to Accelerate
-the vehicle failed to slow down for a vehicle merging into our lane,Failed to Slow
-failed to slow for merging vehicle,Failed to Slow
-merging vehicle,Failed to Slow
-failed to remain stopped,Failed to remain Stopped
-failed to follow route,Failed to follow Route
-turned too soon,Failed for Early Turn
-turned too late,Failed for Late Turn
-Failed to follow route,Failed to follow Route
-Failed to Accelerate,Failed to Accelerate
-Failed to Slow,Failed to Slow
-Failed to remain Stopped,Failed to remain Stopped
-Failed to maintain Speed,Failed to maintain Speed
-Failed to Overtake,Failed to Overtake
-Failed for Early Turn,Failed for Early Turn
-Failed for Late Turn,Failed for Late Turn
-Failed for Lane Position,Failed for Lane Position
-Failed for Diversion,Failed for Diversion
-Emergency Services,Emergency Services
-Close Proximity,Close Proximity
-Uncommanded Disengagement,Uncommanded Disengagement
-Emergency Stop,Emergency Stop
-Accidental Disengagement,Accidental Disengagement
-End of run,End of run
-turned too soon,Failed for Early Turn
-failed to follow the route,Failed to follow Route
-route error,Failed to follow Route
-issue getting too close to the other lane,Failed for Lane Position
-not staying in its lane,Failed for Lane Position
-didnt turn,Failed to follow Route
-didnt slow down for red light,Failed to Slow
-didnt stay stopped for red light,Failed to remain Stopped
-didnt remain stopped,Failed to remain Stopped
-didnt stay still,Failed to remain Stopped
-failed to turn left,Failed to follow Route
-going straight ahead when we needed to turn,Failed to follow Route
-turned late,Failed for Late Turn
-didnt turn at all,Failed to follow Route
-continuing ahead when we needed to turn,Failed to follow Route
-going above the speed limit,Failed to maintain Speed
-aabove the speed limit,Failed to maintain Speed
-going too quick,Failed to maintain Speed
-didnt increase the speed when speed limit changed,Failed to maintain Speed
-didnt slow down with a speed limit change,Failed to Slow
-didnt slow down when speed limit changed,Failed to Slow
-failed to turn right,Failed to follow Route
-didnt slow for the vehicle ahead,Failed to Slow
-not slowing for oncoming vehicle,Failed to Slow
-trouble taking up the right lane for the turn,Failed to follow Route
-failed to follow the right direction,Failed to follow Route
-diversion ahead,Failed for Diversion
-road ahead closed,Failed for Diversion
-road closed,Failed for Diversion
-diverting,Failed for Diversion
-didnt turn when required,Failed to follow Route
-failed to proceed,Failed to Accelerate
-didnt move at green light,Failed to Accelerate
-oversteer,Failed for Late Turn
-error maintaining its lane position,Failed for Lane Position
-going towards the left of the lane,Failed for Lane Position
-drifting in lane,Failed for Lane Position
-going towards the kerb on a bend,Failed for Lane Position
-going towards the centre line,Failed for Lane Position
-slow vehicle,Failed to Slow
-accelerate green light,Failed to Accelerate
-tried to take a wrong turn,Failed to follow Route
-didnt turn correctly,Failed to follow Route
-accidental disengagement,Accidental Disengagement
-driver error,Accidental Disengagement
-error by driver,Accidental Disengagement
-driver error,Accidental Disengagement
-drivers fault,Accidental Disengagement
-failed to engage,Accidental Disengagement
-drivers fault,Accidental Disengagement
-driver error,Accidental Disengagement
-failed engagement,Accidental Disengagement
-error by driver,Accidental Disengagement
-driver error,Accidental Disengagement
-driver error,Accidental Disengagement
-failed to turn right when we had a green light,Failed to Accelerate
-didnt turn right at green light,Failed to Accelerate
-didnt turn right,Failed to follow Route
-didnt move away and turn when we had green light,Failed to Accelerate
-error by driver,Accidental Disengagement
-the vehicle failed to slow down for the vehicle in front,Failed to Slow
-the vehicle dont slow for a stationary vehicle,Failed to Slow
-failed to move off,Failed to Accelerate
-vehicle didnt remain stationary,Failed to remain Stopped
-didnt stay where it was,Failed to remain Stopped
-failed to turn,Failed to follow Route
-didnt turn where required,Failed to follow Route
-failed to turn,Failed to follow Route
-failed to switch lane,Failed to follow Route
-driving error,Accidental Disengagement
-turned too soon,Failed for Early Turn
-didnt maintain its speed,Failed to maintain Speed
-speed speed limit,Failed to maintain Speed
-slow red light,Failed to Slow
-lane position cyclist,Failed for Lane Position
-early turn kerb,Failed for Early Turn
-speed green light,Failed to maintain Speed
-speed turning,Failed to maintain Speed
-speed speed limit,Failed to maintain Speed
-weaving in the lane,Failed for Lane Position
-not matching the speed of the traffic,Failed to maintain Speed
-incorrectly indicating,Failed to follow Route
-incorrect signal,Failed to follow Route
-vehicle didnt stop for the red light,Failed to Slow
-vehicle didnt stay stopped,Failed to remain Stopped
-slow for vehicle,Failed to Slow
-slow for traffic speed,Failed to Slow
-speed for traffic speed,Failed to maintain Speed
-weaving,Failed for Lane Position
-vehicle didnt slow down,Failed to Slow
-the vehicle is going too fast for the road and is going above the speed limit,Failed to maintain Speed
-we needed to slow down when the speed limit changed,Failed to Slow
-the vehicle is weaving in the lane and not maintaining is position correctly,Failed for Lane Position
+transcript,category,subcategory
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to Slow,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to remain Stopped,Junction
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route,Incorrect Lane for Upcoming Turn
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Took Unplotted Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cycle Lane
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped,Keep Clear Markings
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position,Towards Kerb
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Failed to Turn
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped,Stationary Traffic
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed,Match Traffic Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position,Towards Static Obstacle
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane to Continue Ahead
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route,Incorrect Indicator
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route,Incorrect Lane for Upcoming Turn
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Took Unplotted Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cycle Lane
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped,Keep Clear Markings
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position,Towards Kerb
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Failed to Turn
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped,Stationary Traffic
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed,Match Traffic Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position,Towards Static Obstacle
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane to Continue Ahead
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route,Incorrect Indicator
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route,Incorrect Lane for Upcoming Turn
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Took Unplotted Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cycle Lane
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped,Keep Clear Markings
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position,Towards Kerb
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Failed to Turn
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped,Stationary Traffic
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed,Match Traffic Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position,Towards Static Obstacle
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane to Continue Ahead
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane for Upcoming Turn
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route,Incorrect Lane to Continue Ahead
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route,Incorrect Lane to Continue Ahead
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position,Incorrect Lane for Upcoming Turn
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Took Unplotted Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cyclist
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped,Stop Junction
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position,Towards Kerb
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Failed to Turn
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped,Stationary Traffic
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane for Upcoming Turn
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route,Incorrect Lane to Continue Ahead
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route,Incorrect Lane to Continue Ahead
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position,Incorrect Lane for Upcoming Turn
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Took Unplotted Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cyclist
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped,Stop Junction
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position,Towards Kerb
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Failed to Turn
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped,Stationary Traffic
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position,Towards Ongoing Lane
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed,Match Traffic Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position,Towards Static Obstacle
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position,Towards Static Obstacle
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route,Incorrect Lane for Upcoming Turn
+The vehicle drifted into the next lane without signaling.,Failed for Route,Incorrect Lane for Upcoming Turn
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to Slow,Zebra Crossing
+The vehicle ignored a yield sign and proceeded without caution.,Failed to remain Stopped,Keep Clear Markings
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow,Above Speed Limit
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to remain Stopped,Junction
+The vehicle did not come to a complete stop at a red light.,Failed to Slow,Red Light
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route,Failed to Turn
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position,Towards Cyclist
+The vehicle wanted to speed through a yellow light instead of slowing down.,Failed to Slow,Amber Light
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow,Narrow Road
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route,Incorrect Lane to Continue Ahead
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position,Towards Ongoing Lane
+The autonomous vehicle misjudged the distance to a pedestrian crossing and did not slow down as it approached.,Failed to Slow,Pedestrian
+oversteer,Failed for Late Turn,Towards Vehicle
+oversteered,Failed for Late Turn,Towards Vehicle
+didnt take plotted turn,Failed to follow Route,Took Unplotted Turn
+didnt take the turn,Failed to follow Route,Failed to Turn
+failed to turn right,Failed to follow Route,Failed to Turn
+failed left turn,Failed to follow Route,Failed to Turn
+understeer,Failed for Early Turn,Towards Kerb
+turned towards the kerb too soon,Failed for Early Turn,Towards Kerb
+oversteered,Failed for Late Turn,Towards Vehicle
+oversteered and went towards a parked vehicle,Failed for Late Turn,Towards Static Obstacle
+turned way too soon,Failed for Early Turn,Towards Kerb
+the model failed to turn left,Failed to follow Route,Failed to Turn
+going towards the left lane,Failed for Lane Position,Towards Ongoing Lane
+not moving into the correct lane for upcoming turn,Failed to follow Route,Incorrect Lane for Upcoming Turn
+failing to stay still,Failed to remain Stopped,Stationary Traffic
+didnt turn when required,Failed to follow Route,Failed to Turn
+oversteer,Failed for Late Turn,Towards Vehicle
+turned too soon toward the kerb,Failed for Early Turn,Towards Kerb
+didnt turn enough,Failed for Late Turn,Towards Vehicle
+didnt turn enough,Failed for Late Turn,Towards Vehicle
+didnt turn,Failed to follow Route,Failed to Turn
+didnt turn,Failed to follow Route,Failed to Turn
+didnt turn,Failed to follow Route,Failed to Turn
+didnt turn,Failed to follow Route,Failed to Turn
+failed to move off at a green light,Failed to Accelerate,Green Light
+failed to move off,Failed to Accelerate,Green Light
+failed to pull away,Failed to Accelerate,Green Light
+the vehicle failed to slow down for a vehicle merging into our lane,Failed to Slow,Merging Vehicle
+failed to slow for merging vehicle,Failed to Slow,Merging Vehicle
+merging vehicle,Failed to Slow,Merging Vehicle
+failed to remain stopped,Failed to remain Stopped,Stationary Traffic
+failed to follow route,Failed to follow Route,Failed to Turn
+turned too soon,Failed for Early Turn,Towards Oncoming Lane
+turned too late,Failed for Late Turn,Towards Ongoing Lane
+Failed to follow route,Failed to follow Route,Failed to Turn
+Failed to Accelerate,Failed to Accelerate,Move Off in Traffic
+Failed to Slow,Failed to Slow,Red Light
+Failed to remain Stopped,Failed to remain Stopped,Zebra Crossing
+Failed to maintain Speed,Failed to maintain Speed,Match Traffic Speed
+Failed to Overtake,Failed to Overtake,Single Vehicle
+Failed for Early Turn,Failed for Early Turn,Towards Pedestrian
+Failed for Late Turn,Failed for Late Turn,Towards Vehicle
+Failed for Lane Position,Failed for Lane Position,Towards Ongoing Lane
+Failed for Diversion,Failed for Diversion,Failed for Diversion
+Emergency Services,Emergency Services,Emergency Services
+Close Proximity,Close Proximity,Close Proximity
+Uncommanded Disengagement,Uncommanded Disengagement,Uncommanded Disengagement
+Emergency Stop,Emergency Stop,Emergency Stop
+Accidental Disengagement,Accidental Disengagement,Accidental Disengagement
+End of run,End of run,End of Run
+turned too soon,Failed for Early Turn,Towards Vehicle
+failed to follow the route,Failed to follow Route,Failed to Turn
+route error,Failed to follow Route,Failed to Turn
+issue getting too close to the other lane,Failed for Lane Position,Towards Ongoing Lane
+not staying in its lane,Failed for Lane Position,Towards Ongoing Lane
+didnt turn,Failed to follow Route,Failed to Turn
+didnt slow down for red light,Failed to Slow,Red Light
+didnt stay stopped for red light,Failed to remain Stopped,Red Light
+didnt remain stopped,Failed to remain Stopped,Stationary Traffic
+didnt stay still,Failed to remain Stopped,Stationary Traffic
+failed to turn left,Failed to follow Route,Failed to Turn
+going straight ahead when we needed to turn,Failed to follow Route,Failed to Turn
+turned late,Failed for Late Turn,Towards Vehicle
+didnt turn at all,Failed to follow Route,Failed to Turn
+continuing ahead when we needed to turn,Failed to follow Route,Failed to Turn
+going above the speed limit,Failed to maintain Speed,Above Speed Limit
+aabove the speed limit,Failed to maintain Speed,Above Speed Limit
+going too quick,Failed to maintain Speed,Match Traffic Speed
+didnt increase the speed when speed limit changed,Failed to maintain Speed,Match Traffic Speed
+didnt slow down with a speed limit change,Failed to Slow,Red Light
+didnt slow down when speed limit changed,Failed to Slow,Red Light
+failed to turn right,Failed to follow Route,Failed to Turn
+didnt slow for the vehicle ahead,Failed to Slow,Merging Vehicle
+not slowing for oncoming vehicle,Failed to Slow,Merging Vehicle
+trouble taking up the right lane for the turn,Failed to follow Route,Incorrect Lane for Upcoming Turn
+failed to follow the right direction,Failed to follow Route,Failed to Turn
+diversion ahead,Failed for Diversion,Failed for Diversion
+road ahead closed,Failed for Diversion,Failed for Diversion
+road closed,Failed for Diversion,Failed for Diversion
+diverting,Failed for Diversion,Failed for Diversion
+didnt turn when required,Failed to follow Route,Failed to Turn
+failed to proceed,Failed to Accelerate,Move Off in Traffic
+didnt move at green light,Failed to Accelerate,Green Light
+oversteer,Failed for Late Turn,Towards Vehicle
+error maintaining its lane position,Failed for Lane Position,Towards Ongoing Lane
+going towards the left of the lane,Failed for Lane Position,Towards Kerb
+drifting in lane,Failed for Lane Position,Towards Ongoing Lane
+going towards the kerb on a bend,Failed for Lane Position,Towards Kerb
+going towards the centre line,Failed for Lane Position,Towards Ongoing Lane
+slow vehicle,Failed to Slow,Stopped Across Crossing
+accelerate green light,Failed to Accelerate,Green Light
+tried to take a wrong turn,Failed to follow Route,Took Unplotted Turn
+didnt turn correctly,Failed to follow Route,Failed to Turn
+accidental disengagement,Accidental Disengagement,Accidental Disengagement
+driver error,Accidental Disengagement,Accidental Disengagement
+error by driver,Accidental Disengagement,Accidental Disengagement
+driver error,Accidental Disengagement,Accidental Disengagement
+drivers fault,Accidental Disengagement,Accidental Disengagement
+failed to engage,Accidental Disengagement,Accidental Disengagement
+drivers fault,Accidental Disengagement,Accidental Disengagement
+driver error,Accidental Disengagement,Accidental Disengagement
+failed engagement,Accidental Disengagement,Accidental Disengagement
+error by driver,Accidental Disengagement,Accidental Disengagement
+driver error,Accidental Disengagement,Accidental Disengagement
+driver error,Accidental Disengagement,Accidental Disengagement
+failed to turn right when we had a green light,Failed to Accelerate,Green Light
+didnt turn right at green light,Failed to Accelerate,Green Light
+didnt turn right,Failed to follow Route,Failed to Turn
+didnt move away and turn when we had green light,Failed to Accelerate,Green Light
+error by driver,Accidental Disengagement,Accidental Disengagement
+the vehicle failed to slow down for the vehicle in front,Failed to Slow,Merging Vehicle
+the vehicle dont slow for a stationary vehicle,Failed to Slow,Stationary Traffic
+failed to move off,Failed to Accelerate,Move Off in Traffic
+vehicle didnt remain stationary,Failed to remain Stopped,Stationary Traffic
+didnt stay where it was,Failed to remain Stopped,Stationary Traffic
+failed to turn,Failed to follow Route,Failed to Turn
+didnt turn where required,Failed to follow Route,Failed to Turn
+failed to turn,Failed to follow Route,Failed to Turn
+failed to switch lane,Failed to follow Route,Failed to Turn
+driving error,Accidental Disengagement,Accidental Disengagement
+turned too soon,Failed for Early Turn,Towards Vehicle
+didnt maintain its speed,Failed to maintain Speed,Match Traffic Speed
+speed speed limit,Failed to maintain Speed,Above Speed Limit
+slow red light,Failed to Slow,Red Light
+lane position cyclist,Failed for Lane Position,Towards Cyclist
+early turn kerb,Failed for Early Turn,Towards Kerb
+speed green light,Failed to maintain Speed,Match Traffic Speed
+speed turning,Failed to maintain Speed,Match Traffic Speed
+speed speed limit,Failed to maintain Speed,Above Speed Limit
+weaving in the lane,Failed for Lane Position,Towards Ongoing Lane
+not matching the speed of the traffic,Failed to maintain Speed,Match Traffic Speed
+incorrectly indicating,Failed to follow Route,Incorrect Indicator
+incorrect signal,Failed to follow Route,Incorrect Indicator
+vehicle didnt stop for the red light,Failed to Slow,Red Light
+vehicle didnt stay stopped,Failed to remain Stopped,Stationary Traffic
+slow for vehicle,Failed to Slow,Merging Vehicle
+slow for traffic speed,Failed to Slow,Match Traffic Speed
+speed for traffic speed,Failed to maintain Speed,Match Traffic Speed
+weaving,Failed for Lane Position,Towards Ongoing Lane
+vehicle didnt slow down,Failed to Slow,Merging Vehicle
+the vehicle is going too fast for the road and is going above the speed limit,Failed to maintain Speed,Above Speed Limit
+we needed to slow down when the speed limit changed,Failed to Slow,Red Light
+the vehicle is weaving in the lane and not maintaining is position correctly,Failed for Lane Position,Towards Ongoing Lane
+vehicle failed to slow down correctly approaching a red light,Failed to Slow,Red Light
+the model veered to the right towards a cyclist,Failed for Lane Position,Towards Cyclist
+drifting in lane towards the bus lane,Failed for Lane Position,Towards Bus Lane
+heading towards the bus lane,Failed for Lane Position,Towards Bus Lane
+uncommanded,Uncommanded Disengagement,Uncommanded Disengagement
+oversteer,Failed for Late Turn,Towards Kerb
+oversteered,Failed for Late Turn,Towards Kerb
+not slowing correctly to match the speed of the vehicle ahead,Failed to Slow,Match Traffic Speed
