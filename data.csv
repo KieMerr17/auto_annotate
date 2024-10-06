@@ -301,3 +301,9 @@ failed to turn right when we had a green light,Failed to Accelerate
 didnt turn right at green light,Failed to Accelerate
 didnt turn right,Failed to follow Route
 didnt move away and turn when we had green light,Failed to Accelerate
+error by driver,Accidental Disengagement
+the vehicle failed to slow down for the vehicle in front,Failed to Slow
+the vehicle dont slow for a stationary vehicle,Failed to Slow
+failed to move off,Failed to Accelerate
+vehicle didnt remain stationary,Failed to remain Stopped
+didnt stay where it was,Failed to remain Stopped
