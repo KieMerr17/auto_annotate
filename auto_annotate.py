@@ -7,9 +7,6 @@ import pickle
 import logging
 from categories import categories
 
-# Configure logging
-logging.basicConfig(filename='model.log', level=logging.INFO)
-
 # Function to load existing data from CSV and handle potential parsing errors
 def load_existing_data(filename="data.csv"):
     try:

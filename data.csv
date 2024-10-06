@@ -309,3 +309,5 @@ vehicle didnt remain stationary,Failed to remain Stopped
 didnt stay where it was,Failed to remain Stopped
 failed to turn,Failed to follow Route
 didnt turn where required,Failed to follow Route
+failed to turn,Failed to follow Route
+failed to switch lane,Failed to follow Route
