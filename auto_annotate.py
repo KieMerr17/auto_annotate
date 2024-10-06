@@ -14,10 +14,10 @@ def load_existing_data(filename="data.csv"):
         return existing_data
     except FileNotFoundError:
         print("No existing data file found, starting fresh.")
-        return pd.DataFrame(columns=['transcript', 'category', 'subcategory'])  # Add subcategory column
+        return pd.DataFrame(columns=['transcript', 'category', 'subcategory'])
     except pd.errors.ParserError as e:
         print(f"Error parsing the CSV file: {e}")
-        return pd.DataFrame(columns=['transcript', 'category', 'subcategory'])  # Add subcategory column
+        return pd.DataFrame(columns=['transcript', 'category', 'subcategory'])
 
 # Load existing data
 data = load_existing_data("data.csv")
@@ -119,8 +119,7 @@ def validate_prediction(transcript, predicted_category, predicted_subcategory):
 
     # Ask the user if the predictions are correct
     while True:
-        print("")
-        correct = input("Is the prediction correct? (y/n): ").strip().lower()
+        correct = input("\nIs the prediction correct? (y/n): ").strip().lower()
         if correct in ['y', 'n']:
             break
         else:
@@ -169,50 +168,9 @@ def validate_prediction(transcript, predicted_category, predicted_subcategory):
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
         
-        elif isinstance(subcategories, dict) and subcategories:  # Check for nested dictionary of subcategories
-            for subcat_type, subcat_list in subcategories.items():
-                print(f"\nSubcategories under '{correct_category}' ({subcat_type}):")
-                for idx, subcat in enumerate(subcat_list, 1):
-                    print(f"{idx}. {subcat}")
-            
-            # Let the user choose the correct subcategory type first
-            while True:
-                try:
-                    correct_subcategory_type_idx = int(input("Select the subcategory type number: "))
-                    if 1 <= correct_subcategory_type_idx <= len(subcategories):
-                        correct_subcategory_type = list(subcategories.keys())[correct_subcategory_type_idx - 1]
-                        correct_subcategory_list = subcategories[correct_subcategory_type]
-                        break
-                    else:
-                        print(f"Please enter a number between 1 and {len(subcategories)}.")
-                except ValueError:
-                    print("Invalid input. Please enter a valid number.")
-
-            # Now select the actual subcategory from the chosen type
-            while True:
-                print(f"\nSelect the correct subcategory from '{correct_subcategory_type}':")
-                for idx, subcat in enumerate(correct_subcategory_list, 1):
-                    print(f"{idx}. {subcat}")
-                
-                try:
-                    correct_subcategory_idx = int(input("Enter the number of the correct subcategory: "))
-                    if 1 <= correct_subcategory_idx <= len(correct_subcategory_list):
-                        correct_subcategory = correct_subcategory_list[correct_subcategory_idx - 1]
-                        break
-                    else:
-                        print(f"Please enter a number between 1 and {len(correct_subcategory_list)}.")
-                except ValueError:
-                    print("Invalid input. Please enter a valid number.")
-        
-        # If no subcategory was selected, provide feedback accordingly
-        if correct_subcategory is None:
-            print("")
-            print(f"Thank you! \nThe correct category is: \n\n- {correct_category}. (No subcategory needed.)")
-            return correct_category, None, 0.0  # Return None for subcategory if not applicable
-        else:
-            print("")
-            print(f"Thank you! \n\nThe correct category and subcategory are: \n\n- {correct_category}, \n- {correct_subcategory}")
-            return correct_category, correct_subcategory, 0.0  # 0% accuracy if the prediction was incorrect
+        print("")
+        print(f"Thank you! \n\nThe correct category and subcategory are: \n\n- {correct_category}, \n- {correct_subcategory}")
+        return correct_category, correct_subcategory, 0.0  # 0% accuracy if the prediction was incorrect
 
 def self_learn(transcript, final_category, final_subcategory):
     # Load existing data
@@ -251,9 +209,6 @@ def run_model_loop(vectorizer, category_classifier, subcategory_classifier):
 
         predicted_category, predicted_subcategory = categorize_transcript_ml(user_transcript, vectorizer, category_classifier, subcategory_classifier)
         final_category, final_subcategory, accuracy = validate_prediction(user_transcript, predicted_category, predicted_subcategory)
-
-        # print("\nFinal Category Used:", final_category)
-        # print("Final Subcategory Used:", final_subcategory)
 
         # Auto-retrain if the prediction is correct
         if accuracy == 100.0:

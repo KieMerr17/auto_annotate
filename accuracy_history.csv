@@ -339,3 +339,12 @@ uncommanded,Failed for Late Turn,0.0,,,Towards Vehicle
 oversteer,Failed for Late Turn,0.0,,,Towards Vehicle
 oversteered,Failed for Late Turn,0.0,,,Towards Vehicle
 not slowing correctly to match the speed of the vehicle ahead,Failed to Slow,100.0,,,Match Traffic Speed
+test,Failed for Late Turn,0.0,,,Towards Kerb
+test,Failed for Late Turn,0.0,,,Towards Kerb
+test,Failed for Late Turn,0.0,,,Towards Kerb
+test,Failed for Late Turn,0.0,,,Towards Kerb
+test,Failed for Late Turn,0.0,,,Towards Kerb
+test,Failed for Late Turn,0.0,,,Towards Kerb
+uncommanded,Uncommanded Disengagement,100.0,,,Uncommanded Disengagement
+accidental,Accidental Disengagement,0.0,,,Accidental Disengagement
+accidental,Accidental Disengagement,100.0,,,Accidental Disengagement

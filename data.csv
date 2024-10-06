@@ -262,3 +262,6 @@ uncommanded,Uncommanded Disengagement,Uncommanded Disengagement
 oversteer,Failed for Late Turn,Towards Kerb
 oversteered,Failed for Late Turn,Towards Kerb
 not slowing correctly to match the speed of the vehicle ahead,Failed to Slow,Match Traffic Speed
+uncommanded,Uncommanded Disengagement,Uncommanded Disengagement
+accidental,Accidental Disengagement,Accidental Disengagement
+accidental,Accidental Disengagement,Accidental Disengagement
