@@ -312,3 +312,26 @@ didnt turn where required,Failed to follow Route
 failed to turn,Failed to follow Route
 failed to switch lane,Failed to follow Route
 driving error,Accidental Disengagement
+turned too soon,Failed for Early Turn
+didnt maintain its speed,Failed to maintain Speed
+speed speed limit,Failed to maintain Speed
+slow red light,Failed to Slow
+lane position cyclist,Failed for Lane Position
+early turn kerb,Failed for Early Turn
+speed green light,Failed to maintain Speed
+speed turning,Failed to maintain Speed
+speed speed limit,Failed to maintain Speed
+weaving in the lane,Failed for Lane Position
+not matching the speed of the traffic,Failed to maintain Speed
+incorrectly indicating,Failed to follow Route
+incorrect signal,Failed to follow Route
+vehicle didnt stop for the red light,Failed to Slow
+vehicle didnt stay stopped,Failed to remain Stopped
+slow for vehicle,Failed to Slow
+slow for traffic speed,Failed to Slow
+speed for traffic speed,Failed to maintain Speed
+weaving,Failed for Lane Position
+vehicle didnt slow down,Failed to Slow
+the vehicle is going too fast for the road and is going above the speed limit,Failed to maintain Speed
+we needed to slow down when the speed limit changed,Failed to Slow
+the vehicle is weaving in the lane and not maintaining is position correctly,Failed for Lane Position
