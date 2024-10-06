@@ -91,12 +91,6 @@ def load_accuracy_history(filename="accuracy_history.csv"):
     except FileNotFoundError:
         return []
 
-# Function to take user input for a new driving error
-def input_driving_error():
-    print("\n- - - New Driving Error - - -\n")
-    transcript = input("Please describe the driving error: ").strip()
-    return transcript
-
 # Function to categorize a new transcript
 def categorize_transcript_ml(transcript, vectorizer, model):
     # Preprocess and vectorize the transcript
@@ -107,9 +101,27 @@ def categorize_transcript_ml(transcript, vectorizer, model):
     
     return predicted_category
 
-# Global variable to hold new transcripts and categories for retraining
-new_transcripts = []
-new_categories = []
+# Load model and vectorizer if they exist
+try:
+    classifier = load_model("model.pkl")
+    vectorizer = load_vectorizer("vectorizer.pkl")
+    print("Loaded existing model and vectorizer.")
+except (FileNotFoundError, EOFError):
+    print("No existing model or vectorizer found. Starting with a new model.")
+
+# Load corrections if they exist
+new_transcripts, new_categories = load_corrections()
+
+# Load accuracy history if it exists
+accuracy_history = load_accuracy_history()
+
+# Function to calculate the overall accuracy from the history
+def calculate_overall_accuracy(accuracy_history):
+    if len(accuracy_history) == 0:
+        return 0.0
+    total_accuracy = sum([entry['accuracy'] for entry in accuracy_history])
+    overall_accuracy = total_accuracy / len(accuracy_history)
+    return overall_accuracy
 
 # Function to validate the prediction and offer correction
 def validate_prediction(transcript, predicted_category):
@@ -134,76 +146,50 @@ def validate_prediction(transcript, predicted_category):
         
         print(f"Thank you! The correct category is: {correct_category}")
         
-        # Store the corrected transcript and category for retraining
-        new_transcripts.append(transcript)
-        new_categories.append(correct_category)
-        
         return correct_category, 0.0  # 0% accuracy if the prediction was incorrect
 
-# Function to retrain the model with new data
-def retrain_model(vectorizer, classifier, new_transcripts, new_categories):
-    if len(new_transcripts) > 0:
-        # Append the new corrected data to the original dataset
-        additional_data = pd.DataFrame({
-            'transcript': new_transcripts,
-            'category': new_categories
-        })
+# Function to automatically retrain the model after each correction
+def self_learn(transcript, correct_category):
+    # Append the new corrected data to the original dataset
+    additional_data = pd.DataFrame({
+        'transcript': [transcript],
+        'category': [correct_category]
+    })
 
-        global data
-        data = pd.concat([data, additional_data], ignore_index=True)
+    global data
+    data = pd.concat([data, additional_data], ignore_index=True)
 
-        # Re-vectorize the full dataset
-        X_full = data['transcript']
-        y_full = data['category']
-        X_full_tfidf = vectorizer.fit_transform(X_full)
+    # Re-vectorize the full dataset
+    X_full = data['transcript']
+    y_full = data['category']
+    X_full_tfidf = vectorizer.fit_transform(X_full)
 
-        # Retrain the classifier
-        classifier.fit(X_full_tfidf, y_full)
+    # Retrain the classifier
+    classifier.fit(X_full_tfidf, y_full)
 
-        print("\nModel retrained with user-corrected data.")
-        
-        # Save the updated model, vectorizer, and corrections
-        save_model(classifier, "model.pkl")
-        save_vectorizer(vectorizer, "vectorizer.pkl")
-        save_corrections(new_transcripts, new_categories)
+    # Save the updated model, vectorizer, and corrections
+    save_model(classifier, "model.pkl")
+    save_vectorizer(vectorizer, "vectorizer.pkl")
+    save_corrections([transcript], [correct_category])
 
-        # Clear new transcripts and categories after retraining
-        new_transcripts.clear()
-        new_categories.clear()
-
-# Load model and vectorizer if they exist
-try:
-    classifier = load_model("model.pkl")
-    vectorizer = load_vectorizer("vectorizer.pkl")
-    print("Loaded existing model and vectorizer.")
-except (FileNotFoundError, EOFError):
-    print("No existing model or vectorizer found. Starting with a new model.")
-
-# Load corrections if they exist
-new_transcripts, new_categories = load_corrections()
-
-# Load accuracy history if it exists
-accuracy_history = load_accuracy_history()
-
-# Function to calculate the overall accuracy from the history
-def calculate_overall_accuracy(accuracy_history):
-    if len(accuracy_history) == 0:
-        return 0.0
-    total_accuracy = sum([entry['accuracy'] for entry in accuracy_history])
-    overall_accuracy = total_accuracy / len(accuracy_history)
-    return overall_accuracy
+    print("\nModel retrained with the new data automatically.")
 
 # Loop to run the model and ask the user continuously
 def run_model_loop(vectorizer, classifier):
     while True:
         # Get a new driving error from user input
-        user_transcript = input_driving_error()
-        
+        print("\n- - - New Driving Error - - -\n")
+        user_transcript = input("Please describe the driving error: ").strip()
+
         # Predict the category for the user's input
         predicted_category = categorize_transcript_ml(user_transcript, vectorizer, classifier)
         final_category, accuracy = validate_prediction(user_transcript, predicted_category)
-        
+
         print("\nFinal Category Used:", final_category)
+
+        # Automatically retrain the model with new data if correction was made
+        if accuracy == 0.0:
+            self_learn(user_transcript, final_category)
 
         # Store the accuracy in history
         accuracy_history.append({"transcript": user_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
@@ -214,10 +200,6 @@ def run_model_loop(vectorizer, classifier):
         # Calculate and display the overall accuracy
         overall_accuracy = calculate_overall_accuracy(accuracy_history)
         print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}%")
-
-        # Check if we have enough new corrections to retrain
-        if len(new_transcripts) >= 1:  # Retrain after 5 corrections
-            retrain_model(vectorizer, classifier, new_transcripts, new_categories)
 
         # Ask if the user wants to try another transcript
         continue_running = input("\nDo you want to categorize another driving error? (y/n): ").strip().lower()
