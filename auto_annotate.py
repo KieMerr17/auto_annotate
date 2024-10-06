@@ -148,12 +148,12 @@ def validate_prediction(transcript, predicted_category):
         
         return correct_category, 0.0  # 0% accuracy if the prediction was incorrect
 
-# Function to automatically retrain the model after each correction
-def self_learn(transcript, correct_category):
-    # Append the new corrected data to the original dataset
+# Function to retrain the model after every prediction (whether correct or incorrect)
+def self_learn(transcript, final_category):
+    # Append the new data to the original dataset
     additional_data = pd.DataFrame({
         'transcript': [transcript],
-        'category': [correct_category]
+        'category': [final_category]
     })
 
     global data
@@ -170,7 +170,7 @@ def self_learn(transcript, correct_category):
     # Save the updated model, vectorizer, and corrections
     save_model(classifier, "model.pkl")
     save_vectorizer(vectorizer, "vectorizer.pkl")
-    save_corrections([transcript], [correct_category])
+    save_corrections([transcript], [final_category])
 
     print("\nModel retrained with the new data automatically.")
 
@@ -187,9 +187,8 @@ def run_model_loop(vectorizer, classifier):
 
         print("\nFinal Category Used:", final_category)
 
-        # Automatically retrain the model with new data if correction was made
-        if accuracy == 0.0:
-            self_learn(user_transcript, final_category)
+        # Retrain the model with the current data regardless of accuracy
+        self_learn(user_transcript, final_category)
 
         # Store the accuracy in history
         accuracy_history.append({"transcript": user_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
