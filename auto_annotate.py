@@ -119,7 +119,12 @@ def validate_prediction(transcript, predicted_category):
     print("\nPredicted Category:\n", predicted_category)
     
     # Ask the user if the predicted category is correct
-    correct = input("Is the prediction correct? (y/n): ").strip().lower()
+    while True:
+        correct = input("Is the prediction correct? (y/n): ").strip().lower()
+        if correct in ['y', 'n']:
+            break
+        else:
+            print("Invalid input. Please enter 'y' for yes or 'n' for no.")
     
     if correct == 'y':
         print("Great! The prediction is correct.")
@@ -130,30 +135,48 @@ def validate_prediction(transcript, predicted_category):
             print(f"{idx}. {category}")
         
         # Let the user choose the correct category by number
-        correct_category_idx = int(input("Enter the number of the correct annotation: "))
-        correct_category = categories[correct_category_idx - 1]
+        while True:
+            try:
+                correct_category_idx = int(input("Enter the number of the correct annotation: "))
+                if 1 <= correct_category_idx <= len(categories):
+                    correct_category = categories[correct_category_idx - 1]
+                    break
+                else:
+                    print(f"Please enter a number between 1 and {len(categories)}.")
+            except ValueError:
+                print("Invalid input. Please enter a valid number.")
         
         print(f"Thank you! The correct category is: {correct_category}")
-        
         return correct_category, 0.0  # 0% accuracy if the prediction was incorrect
 
 def self_learn(transcript, final_category):
+    # Load existing data
+    try:
+        existing_data = pd.read_csv("data.csv")
+    except FileNotFoundError:
+        # If no file exists, create an empty DataFrame
+        existing_data = pd.DataFrame(columns=['transcript', 'category'])
+
+    # Create a new DataFrame for the new entry
     additional_data = pd.DataFrame({'transcript': [transcript], 'category': [final_category]})
-    global data
-    data = pd.concat([data, additional_data], ignore_index=True)
-    data.to_csv("data.csv", index=False)
+
+    # Append the new data to the existing data
+    combined_data = pd.concat([existing_data, additional_data], ignore_index=True)
+
+    # Save the combined data back to the CSV file
+    combined_data.to_csv("data.csv", index=False)
 
     # Re-vectorize the full dataset
-    X_full = data['transcript']
-    y_full = data['category']
+    X_full = combined_data['transcript']
+    y_full = combined_data['category']
     X_full_tfidf = vectorizer.fit_transform(X_full)
 
     # Retrain the classifier
     classifier.fit(X_full_tfidf, y_full)
 
+    # Save the updated model and vectorizer
     save_model(classifier, "model.pkl")
     save_vectorizer(vectorizer, "vectorizer.pkl")
-    save_corrections([transcript], [final_category])
 
     print("\nTraining Model with the new data...")
 
@@ -182,7 +205,13 @@ def run_model_loop(vectorizer, classifier):
             self_learn(user_transcript, final_category)
         else:
             # Ask whether to retrain the model after an incorrect prediction
-            retrain = input("Do you want to retrain the model with this correction? (y/n): ").strip().lower()
+            while True:
+                retrain = input("Do you want to retrain the model with this correction? (y/n): ").strip().lower()
+                if retrain in ['y', 'n']:
+                    break
+                else:
+                    print("Invalid input. Please enter 'y' for yes or 'n' for no.")
+            
             if retrain == 'y':
                 self_learn(user_transcript, final_category)
             else:

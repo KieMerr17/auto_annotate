@@ -159,6 +159,26 @@ The vehicle merged onto the highway without checking for approaching traffic.,Fa
 "The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
 The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
 "The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
+The vehicle drifted into the next lane without signaling.,Failed for Lane Position
+The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to remain Stopped
+The vehicle ignored a yield sign and proceeded without caution.,Failed to follow Route
+The vehicle accelerated rapidly in a school zone where speeds should be reduced.,Failed to Slow
+The vehicle failed to give way to oncoming traffic at a roundabout.,Failed to follow Route
+"The vehicle attempted a left turn from the wrong lane, cutting across traffic.",Failed for Lane Position
+The vehicle did not come to a complete stop at a red light.,Failed to remain Stopped
+The vehicle missed a turn and attempted to proceed.,Failed to follow Route
+The vehicle turned right without checking for cyclists in the bike lane.,Failed for Lane Position
+The vehicle overran the stop line at a traffic light and blocked the crosswalk.,Failed to remain Stopped
+The vehicle failed to signal before changing lanes on the highway.,Failed for Lane Position
+"The vehicle drove too close to the curb, scraping the wheel against it.",Failed for Lane Position
+The vehicle sped through a yellow light instead of slowing down.,Failed to Slow
+The vehicle did not adjust speed in heavy rain and skidded at a corner.,Failed to Slow
+The vehicle took an illegal U-turn at a no U-turn sign.,Failed to follow Route
+"The vehicle rolled backward slightly while waiting on a hill, almost hitting the car behind.",Failed to remain Stopped
+The vehicle merged onto the highway without checking for approaching traffic.,Failed for Lane Position
+"The vehicle didn’t maintain a safe following distance, leading to a near rear-end collision.",Failed to maintain Speed
+The vehicle veered off the road momentarily while navigating a sharp bend.,Failed for Lane Position
+"The vehicle entered a one-way street from the wrong direction, causing confusion for oncoming vehicles.",Failed to follow Route
 The vehicle drifted into the next lane without signaling.,Failed for Route
 The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to Slow
 The vehicle ignored a yield sign and proceeded without caution.,Failed to remain Stopped
@@ -202,3 +222,35 @@ failed to pull away,Failed to Accelerate
 the vehicle failed to slow down for a vehicle merging into our lane,Failed to Slow
 failed to slow for merging vehicle,Failed to Slow
 merging vehicle,Failed to Slow
+failed to remain stopped,Failed to remain Stopped
+failed to follow route,Failed to follow Route
+turned too soon,Failed for Early Turn
+turned too late,Failed for Late Turn
+Failed to follow route,Failed to follow Route
+Failed to Accelerate,Failed to Accelerate
+Failed to Slow,Failed to Slow
+Failed to remain Stopped,Failed to remain Stopped
+Failed to maintain Speed,Failed to maintain Speed
+Failed to Overtake,Failed to Overtake
+Failed for Early Turn,Failed for Early Turn
+Failed for Late Turn,Failed for Late Turn
+Failed for Lane Position,Failed for Lane Position
+Failed for Diversion,Failed for Diversion
+Emergency Services,Emergency Services
+Close Proximity,Close Proximity
+Uncommanded Disengagement,Uncommanded Disengagement
+Emergency Stop,Emergency Stop
+Accidental Disengagement,Accidental Disengagement
+End of run,End of run
+turned too soon,Failed for Early Turn
+failed to follow the route,Failed to follow Route
+route error,Failed to follow Route
+issue getting too close to the other lane,Failed for Lane Position
+not staying in its lane,Failed for Lane Position
+didnt turn,Failed to follow Route
+didnt slow down for red light,Failed to Slow
+didnt stay stopped for red light,Failed to remain Stopped
+didnt remain stopped,Failed to remain Stopped
+didnt stay still,Failed to remain Stopped
+failed to turn left,Failed to follow Route
+going straight ahead when we needed to turn,Failed to follow Route
