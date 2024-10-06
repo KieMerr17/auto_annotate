@@ -52,7 +52,7 @@ y_pred = classifier.predict(X_test_tfidf)
 accuracy = accuracy_score(y_test, y_pred)
 logging.info(f'Initial model accuracy: {accuracy:.2f}%')
 
-# Functions for saving and loading models and vectorizers (same as original)
+# Functions for saving and loading models and vectorizers
 def save_model(model, filename):
     with open(filename, 'wb') as f:
         pickle.dump(model, f)
@@ -68,17 +68,6 @@ def load_model(filename):
 def load_vectorizer(filename):
     with open(filename, 'rb') as f:
         return pickle.load(f)
-
-def save_corrections(transcripts, categories, filename="corrections.csv"):
-    corrections_df = pd.DataFrame({'transcript': transcripts, 'category': categories})
-    corrections_df.to_csv(filename, index=False)
-
-def load_corrections(filename="corrections.csv"):
-    try:
-        corrections_df = pd.read_csv(filename)
-        return corrections_df['transcript'].tolist(), corrections_df['category'].tolist()
-    except FileNotFoundError:
-        return [], []
 
 def save_accuracy_history(data, filename="accuracy_history.csv"):
     accuracy_df = pd.DataFrame(data)
@@ -103,7 +92,6 @@ try:
 except (FileNotFoundError, EOFError):
     print("No existing model or vectorizer found. Starting with a new model.")
 
-new_transcripts, new_categories = load_corrections()
 accuracy_history = load_accuracy_history()
 
 def calculate_overall_accuracy(accuracy_history):
@@ -180,16 +168,6 @@ def self_learn(transcript, final_category):
 
     print("\nTraining Model with the new data...")
 
-# Function to remove last correction
-def remove_last_correction():
-    try:
-        corrections_df = pd.read_csv("corrections.csv")
-        corrections_df = corrections_df[:-1]  # Remove the last row
-        corrections_df.to_csv("corrections.csv", index=False)
-        print("Last correction removed.")
-    except FileNotFoundError:
-        print("No corrections file found.")
-
 def run_model_loop(vectorizer, classifier):
     while True:
         print("\n- - - New Driving Error - - -\n")
@@ -214,9 +192,6 @@ def run_model_loop(vectorizer, classifier):
             
             if retrain == 'y':
                 self_learn(user_transcript, final_category)
-            else:
-                # If no retrain, remove the last entry from corrections
-                remove_last_correction()
 
         accuracy_history.append({"transcript": user_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
         save_accuracy_history(accuracy_history)

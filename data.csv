@@ -254,3 +254,12 @@ didnt remain stopped,Failed to remain Stopped
 didnt stay still,Failed to remain Stopped
 failed to turn left,Failed to follow Route
 going straight ahead when we needed to turn,Failed to follow Route
+turned late,Failed for Late Turn
+didnt turn at all,Failed to follow Route
+continuing ahead when we needed to turn,Failed to follow Route
+going above the speed limit,Failed to maintain Speed
+aabove the speed limit,Failed to maintain Speed
+going too quick,Failed to maintain Speed
+didnt increase the speed when speed limit changed,Failed to maintain Speed
+didnt slow down with a speed limit change,Failed to Slow
+didnt slow down when speed limit changed,Failed to Slow
