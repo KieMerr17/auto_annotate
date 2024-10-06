@@ -20,7 +20,6 @@ data = pd.DataFrame({
 # Function to load existing data from CSV and handle potential parsing errors
 def load_existing_data(filename="data.csv"):
     try:
-        # Use on_bad_lines='skip' to skip bad lines
         existing_data = pd.read_csv(filename, on_bad_lines='skip')  
         return existing_data
     except FileNotFoundError:
@@ -32,62 +31,48 @@ def load_existing_data(filename="data.csv"):
 
 # Load the existing data
 existing_data = load_existing_data("data.csv")
-
-# Combine the existing data with the initial data
 data = pd.concat([data, existing_data], ignore_index=True)
 
-# Split the data into features (transcripts) and labels (categories)
+# Split the data into features and labels
 X = data['transcript']
 y = data['category']
-
-# Split the dataset into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Convert the text data into numerical features using TF-IDF
-vectorizer = TfidfVectorizer(stop_words='english', max_features=5000, ngram_range=(1, 2))  # Unigrams and bigrams
+vectorizer = TfidfVectorizer(stop_words='english', max_features=5000, ngram_range=(1, 2))
 X_train_tfidf = vectorizer.fit_transform(X_train)
 X_test_tfidf = vectorizer.transform(X_test)
 
-# Train a classifier (Random Forest in this case)
+# Train a classifier (Random Forest)
 classifier = RandomForestClassifier(n_estimators=100, random_state=42)
 classifier.fit(X_train_tfidf, y_train)
 
 # Predict on the test set
 y_pred = classifier.predict(X_test_tfidf)
-
-# Evaluate the model
 accuracy = accuracy_score(y_test, y_pred)
 logging.info(f'Initial model accuracy: {accuracy:.2f}%')
 
-# Function to save the trained model
+# Functions for saving and loading models and vectorizers (same as original)
 def save_model(model, filename):
     with open(filename, 'wb') as f:
         pickle.dump(model, f)
 
-# Function to save the vectorizer
 def save_vectorizer(vectorizer, filename):
     with open(filename, 'wb') as f:
         pickle.dump(vectorizer, f)
 
-# Function to load the trained model
 def load_model(filename):
     with open(filename, 'rb') as f:
         return pickle.load(f)
 
-# Function to load the vectorizer
 def load_vectorizer(filename):
     with open(filename, 'rb') as f:
         return pickle.load(f)
 
-# Function to save user corrections to a CSV file
 def save_corrections(transcripts, categories, filename="corrections.csv"):
-    corrections_df = pd.DataFrame({
-        'transcript': transcripts,
-        'category': categories
-    })
+    corrections_df = pd.DataFrame({'transcript': transcripts, 'category': categories})
     corrections_df.to_csv(filename, index=False)
 
-# Function to load user corrections from a CSV file
 def load_corrections(filename="corrections.csv"):
     try:
         corrections_df = pd.read_csv(filename)
@@ -95,12 +80,10 @@ def load_corrections(filename="corrections.csv"):
     except FileNotFoundError:
         return [], []
 
-# Function to save accuracy history to a CSV file
 def save_accuracy_history(data, filename="accuracy_history.csv"):
     accuracy_df = pd.DataFrame(data)
     accuracy_df.to_csv(filename, index=False)
 
-# Function to load accuracy history from a CSV file
 def load_accuracy_history(filename="accuracy_history.csv"):
     try:
         accuracy_df = pd.read_csv(filename)
@@ -108,17 +91,11 @@ def load_accuracy_history(filename="accuracy_history.csv"):
     except FileNotFoundError:
         return []
 
-# Function to categorize a new transcript
 def categorize_transcript_ml(transcript, vectorizer, model):
-    # Preprocess and vectorize the transcript
     transcript_tfidf = vectorizer.transform([transcript])
-    
-    # Predict the category
     predicted_category = model.predict(transcript_tfidf)[0]
-    
     return predicted_category
 
-# Load model and vectorizer if they exist
 try:
     classifier = load_model("model.pkl")
     vectorizer = load_vectorizer("vectorizer.pkl")
@@ -126,21 +103,16 @@ try:
 except (FileNotFoundError, EOFError):
     print("No existing model or vectorizer found. Starting with a new model.")
 
-# Load corrections if they exist
 new_transcripts, new_categories = load_corrections()
-
-# Load accuracy history if it exists
 accuracy_history = load_accuracy_history()
 
-# Function to calculate the overall accuracy from the history
 def calculate_overall_accuracy(accuracy_history):
     if len(accuracy_history) == 0:
         return 0.0
-    total_accuracy = sum([entry['accuracy'] for entry in accuracy_history])
+    total_accuracy = sum(entry['accuracy'] for entry in accuracy_history)
     overall_accuracy = total_accuracy / len(accuracy_history)
     return overall_accuracy
 
-# Function to validate the prediction and offer correction
 def validate_prediction(transcript, predicted_category):
     print("\n- - - Category Assessment - - -\n")
     print("Transcript:\n", transcript)
@@ -165,18 +137,10 @@ def validate_prediction(transcript, predicted_category):
         
         return correct_category, 0.0  # 0% accuracy if the prediction was incorrect
 
-# Function to retrain the model after every prediction (whether correct or incorrect)
 def self_learn(transcript, final_category):
-    # Append the new data to the original dataset
-    additional_data = pd.DataFrame({
-        'transcript': [transcript],
-        'category': [final_category]
-    })
-
+    additional_data = pd.DataFrame({'transcript': [transcript], 'category': [final_category]})
     global data
     data = pd.concat([data, additional_data], ignore_index=True)
-
-    # Save the updated data to the CSV file
     data.to_csv("data.csv", index=False)
 
     # Re-vectorize the full dataset
@@ -187,36 +151,47 @@ def self_learn(transcript, final_category):
     # Retrain the classifier
     classifier.fit(X_full_tfidf, y_full)
 
-    # Save the updated model, vectorizer, and corrections
     save_model(classifier, "model.pkl")
     save_vectorizer(vectorizer, "vectorizer.pkl")
     save_corrections([transcript], [final_category])
 
-    print("\nModel retrained with the new data automatically.")
+    print("\nTraining Model with the new data...")
 
-# Loop to run the model and ask the user continuously
+# Function to remove last correction
+def remove_last_correction():
+    try:
+        corrections_df = pd.read_csv("corrections.csv")
+        corrections_df = corrections_df[:-1]  # Remove the last row
+        corrections_df.to_csv("corrections.csv", index=False)
+        print("Last correction removed.")
+    except FileNotFoundError:
+        print("No corrections file found.")
+
 def run_model_loop(vectorizer, classifier):
     while True:
-        # Get a new driving error from user input
         print("\n- - - New Driving Error - - -\n")
         user_transcript = input("Please describe the driving error: ").strip()
 
-        # Predict the category for the user's input
         predicted_category = categorize_transcript_ml(user_transcript, vectorizer, classifier)
         final_category, accuracy = validate_prediction(user_transcript, predicted_category)
 
         print("\nFinal Category Used:", final_category)
 
-        # Retrain the model with the current data regardless of accuracy
-        self_learn(user_transcript, final_category)
+        # Auto-retrain if the prediction is correct
+        if accuracy == 100.0:
+            self_learn(user_transcript, final_category)
+        else:
+            # Ask whether to retrain the model after an incorrect prediction
+            retrain = input("Do you want to retrain the model with this correction? (y/n): ").strip().lower()
+            if retrain == 'y':
+                self_learn(user_transcript, final_category)
+            else:
+                # If no retrain, remove the last entry from corrections
+                remove_last_correction()
 
-        # Store the accuracy in history
         accuracy_history.append({"transcript": user_transcript, "predicted_category": predicted_category, "accuracy": accuracy})
-
-        # Save the accuracy history after each prediction
         save_accuracy_history(accuracy_history)
 
-        # Calculate and display the overall accuracy
         overall_accuracy = calculate_overall_accuracy(accuracy_history)
         print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}% \n")
 
