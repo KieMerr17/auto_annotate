@@ -2,6 +2,7 @@ The vehicle is not accelerating as it should while approaching a green light.
 The car ignored the zebra crossing and did not yield to pedestrians.
 It’s moving too slowly in a school zone.
 The car failed to match the traffic speed while merging onto the highway.
+The vehicle is stopped at a red light but should be moving.
 It’s failing to yield at a junction.
 The vehicle just passed a stop junction without stopping.
 We’re about to miss the turn.

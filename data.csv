@@ -398,3 +398,13 @@ It's approaching a speed bump without slowing down.,Failed to Slow,Speed Bump
 The vehicle isn’t checking for pedestrians at the crossing.,Failed to Slow,Zebra Crossing
 We're too close to the parked car.,Failed to Slow,Behind Stationary Vehicle
 The car is not recognizing the emergency vehicle approaching.,Emergency Services,Emergency Services
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing
+We’re getting too close to that static obstacle.,Failed for Lane Position, Towards Static Obstacle
+The vehicle is approaching a stop sign too quickly.,Failed to Slow,Stop Junction
+The car just ran a red light.,Failed to Slow,Red Light
+We’re not recognizing the cyclist approaching from the left.,Failed for Lane Position, Cyclist
+The car failed to maintain a safe distance from the vehicle in front.,Failed to Slow,Match Traffic Speed
+We need to stop.,Emergency Stop,Emergency Stop
+The vehicle is swerving towards the curb.,Failed for Lane Position,Towards Kerb
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
