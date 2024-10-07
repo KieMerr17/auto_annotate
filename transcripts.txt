@@ -1,0 +1,99 @@
+The vehicle is not accelerating as it should while approaching a green light.
+The car ignored the zebra crossing and did not yield to pedestrians.
+It’s moving too slowly in a school zone.
+The car failed to match the traffic speed while merging onto the highway.
+It’s failing to yield at a junction.
+The vehicle just passed a stop junction without stopping.
+We’re about to miss the turn.
+The car isn't responding to my attempts to speed up.
+We need to stop.
+The vehicle is swerving and not maintaining a clear lane.
+The car is not slowing down as we approach the yellow box.
+The vehicle is tailgating.
+We just ran a stop sign.
+The car isn’t yielding to oncoming traffic while making a left turn.
+It's approaching a speed bump without slowing down.
+The vehicle isn’t checking for pedestrians at the crossing.
+We're too close to the parked car.
+The car is not recognizing the emergency vehicle approaching.
+We just passed a bus stop without slowing down.
+It's not merging properly.
+The vehicle is heading towards the curb without adjusting.
+We’re approaching an intersection, and it’s not slowing down.
+The car is making an early turn towards an oncoming lane.
+The vehicle is swerving into the wrong lane.
+It’s accelerating in a narrow road.
+The car is ignoring the amber light.
+We're not maintaining the speed limit in this area.
+The vehicle is missing turns.
+The car is veering off towards the cyclist.
+The vehicle isn’t recognizing the need to stop for stationary traffic.
+We’re approaching a junction, and it’s not slowing down.
+The vehicle is about to collide with that parked car.
+It’s not yielding to the pedestrian waiting at the crossing.
+The car just attempted an illegal U-turn.
+We need to signal before changing lanes.
+The vehicle is getting too close to the edge of the road.
+It’s not recognizing the danger from the merging vehicles.
+The vehicle is drifting.
+It’s driving over the speed limit.
+The car isn’t stopping at the junction.
+We’re not checking blind spots before merging.
+The vehicle is approaching a refuge truck without slowing down.
+We’re not recognizing the need to keep clear of the markings.
+The car is about to hit a cyclist.
+It’s not recognizing the need to stop for the pedestrian.
+We need to adjust; the car is too close to that oncoming vehicle.
+The vehicle is swerving dangerously between lanes.
+We’re getting too close to that static obstacle.
+The vehicle is approaching a stop sign too quickly.
+The car just ran a red light.
+It’s accelerating on a wet road.
+The vehicle is ignoring the signs indicating roadworks ahead.
+We’re not recognizing the cyclist approaching from the left.
+The car failed to maintain a safe distance from the vehicle in front.
+We need to stop.
+The vehicle is swerving towards the curb.
+The car is not yielding when it should.
+We’re about to hit the barrier.
+The vehicle is moving too slowly at a junction.
+It’s not stopping for a bus at the bus stop.
+The car is ignoring the yellow box at the intersection.
+We’re merging, and the vehicle isn’t adjusting its speed.
+The vehicle is about to collide with the parked car.
+It’s approaching a pedestrian crossing without slowing down.
+The vehicle is driving too close to that cyclist.
+The car isn’t following the correct route.
+We’re entering a narrow road without adjusting.
+The vehicle isn’t reacting to the stopped traffic ahead.
+The car just ran the stop sign.
+It’s not responding to the red light.
+The vehicle isn’t keeping a safe distance from the cyclist.
+We’re about to miss our turn.
+The car is not yielding to the oncoming traffic.
+We’re getting too close to the center line.
+The vehicle is driving too slowly in heavy traffic.
+The car just made an unplanned turn.
+It’s approaching a merge point without adjusting its speed.
+The vehicle isn’t stopping for the yellow light.
+We’re heading straight towards a no-entry sign.
+The vehicle is accelerating when it should be slowing down.
+The car just made an improper lane change.
+We’re not recognizing the need to slow for the cyclist.
+The vehicle is approaching a red light.
+It’s not responding to the warning signs ahead.
+The car is weaving dangerously through traffic.
+We’re not recognizing the need to yield at the junction.
+The vehicle is approaching a roundabout without slowing down.
+It’s making an illegal U-turn.
+The car is not maintaining speed in heavy traffic.
+We’re not recognizing the stopped bus ahead.
+The vehicle is ignoring the pedestrian.
+It’s approaching a speed bump too quickly.
+The car is swerving towards oncoming traffic.
+We’re approaching a narrow road without adjusting speed.
+The vehicle just missed the exit.
+The car is failing to recognize the hazard ahead.
+We’re about to collide with that truck.
+The vehicle is speeding in a residential area.
+It’s approaching a cyclist without slowing down.

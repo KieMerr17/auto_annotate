@@ -19,6 +19,17 @@ def load_existing_data(filename="data.csv"):
         print(f"Error parsing the CSV file: {e}")
         return pd.DataFrame(columns=['transcript', 'category', 'subcategory'])
 
+# Function to load new transcripts from a file
+def load_transcripts(filename="transcripts.txt"):
+    try:
+        with open(filename, 'r') as file:
+            transcripts = file.readlines()
+        transcripts = [t.strip() for t in transcripts if t.strip()]  # Remove empty lines
+        return transcripts
+    except FileNotFoundError:
+        print(f"Transcripts file '{filename}' not found.")
+        return []
+
 # Load existing data
 data = load_existing_data("data.csv")
 
@@ -112,10 +123,10 @@ def display_subcategories(category):
     return False
 
 def validate_prediction(transcript, predicted_category, predicted_subcategory):
-    print("\n- - - Category and Subcategory Assessment - - -\n")
-    print("Transcript:\n", transcript, "\n")
-    print("Predicted Category:\n", predicted_category, "\n")
-    print("Predicted Subcategory:\n", predicted_subcategory)
+    print("\n- - - Category and Subcategory Assessment - - -")
+    print("\nTranscript:\n", transcript)
+    print("\nPredicted Category:\n", predicted_category)
+    print("\nPredicted Subcategory:\n", predicted_subcategory)
 
     # Ask the user if the predictions are correct
     while True:
@@ -167,7 +178,6 @@ def validate_prediction(transcript, predicted_category, predicted_subcategory):
                         print(f"Please enter a number between 1 and {len(subcategories)}.")
                 except ValueError:
                     print("Invalid input. Please enter a valid number.")
-        
         print("")
         print(f"Thank you! \n\nThe correct category and subcategory are: \n\n- {correct_category}, \n- {correct_subcategory}")
         return correct_category, correct_subcategory, 0.0  # 0% accuracy if the prediction was incorrect
@@ -202,11 +212,14 @@ def self_learn(transcript, final_category, final_subcategory):
 
     print("\nTraining Model with the new data...")
 
-def run_model_loop(vectorizer, category_classifier, subcategory_classifier):
-    while True:
-        print("\n- - - New Driving Error - - -\n")
-        user_transcript = input("Please describe the driving error: ").strip()
+def run_model_loop(vectorizer, category_classifier, subcategory_classifier, transcript_file):
+    transcripts = load_transcripts(transcript_file)
 
+    if not transcripts:
+        print("No transcripts found to process.")
+        return
+
+    for user_transcript in transcripts:
         predicted_category, predicted_subcategory = categorize_transcript_ml(user_transcript, vectorizer, category_classifier, subcategory_classifier)
         final_category, final_subcategory, accuracy = validate_prediction(user_transcript, predicted_category, predicted_subcategory)
 
@@ -216,8 +229,7 @@ def run_model_loop(vectorizer, category_classifier, subcategory_classifier):
         else:
             # Ask whether to retrain the model after an incorrect prediction
             while True:
-                print("")
-                retrain = input("Do you want to retrain the model with this correction? (y/n): ").strip().lower()
+                retrain = input("\nDo you want to retrain the model with this correction? (y/n): ").strip().lower()
                 if retrain in ['y', 'n']:
                     break
                 else:
@@ -232,5 +244,5 @@ def run_model_loop(vectorizer, category_classifier, subcategory_classifier):
         overall_accuracy = calculate_overall_accuracy(accuracy_history)
         print(f"\nCurrent Overall Accuracy: {overall_accuracy:.2f}% \n")
 
-# Run the model loop
-run_model_loop(vectorizer, category_classifier, subcategory_classifier)
+# Run the model loop with automatic transcript processing from a file
+run_model_loop(vectorizer, category_classifier, subcategory_classifier, "transcripts.txt")

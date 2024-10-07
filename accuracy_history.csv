@@ -360,3 +360,23 @@ slow roadworks,Failed to Slow,100.0,,, Roadworks
 not slowing down for a stop junction, Emergency Stop,0.0,,, Stop Junction
 didnt slow down for the stop sign,Failed to Slow,0.0,,,Merging Vehicle
 didnt come to a complete stop at the stop sign,Failed to remain Stopped,0.0,,,Stop Junction
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Slow,0.0,,,Green Light
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to remain Stopped,0.0,,, Empty Zebra Crossing
+It’s moving too slowly in a school zone.,Failed to Slow,0.0,,,Above Speed Limit
+The car failed to match the traffic speed while merging onto the highway.,Failed to Accelerate,0.0,,, Match Traffic Speed
+The vehicle is stopped at a red light but should be moving.,Failed to Slow,0.0,,,Red Light
+It’s failing to yield at a junction.,Failed to Accelerate,0.0,,,Giveway
+The vehicle just passed a stop junction without stopping.,Failed to Slow,0.0,,,Merging Vehicle
+We’re about to miss the turn.,Failed to follow Route,100.0,,,Failed to Turn
+The car isn't responding to my attempts to speed up.,Failed to maintain Speed,100.0,,,Match Traffic Speed
+We need to stop.,Emergency Stop,0.0,,,Stop Junction
+The vehicle is swerving and not maintaining a clear lane.,Failed for Lane Position,100.0,,,Towards Ongoing Lane
+The car is not slowing down as we approach the yellow box.,Failed to Slow,100.0,,, Yellow Box
+The vehicle is tailgating.,Failed to Slow,0.0,,,Merging Vehicle
+We just ran a stop sign.,Failed to Slow,100.0,,,Stop Junction
+The car isn’t yielding to oncoming traffic while making a left turn.,Failed to follow Route,0.0,,,Failed to Turn
+It's approaching a speed bump without slowing down.,Failed to maintain Speed,0.0,,,Match Traffic Speed
+The vehicle isn’t checking for pedestrians at the crossing.,Failed to Slow,0.0,,,Merging Vehicle
+We're too close to the parked car.,Close Proximity,0.0,,,Towards Kerb
+The car is not recognizing the emergency vehicle approaching.,Failed to Slow,0.0,,,Merging Vehicle
+We just passed a bus stop without slowing down.,Failed to Slow,0.0,,,Stop Junction
