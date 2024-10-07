@@ -348,3 +348,15 @@ test,Failed for Late Turn,0.0,,,Towards Kerb
 uncommanded,Uncommanded Disengagement,100.0,,,Uncommanded Disengagement
 accidental,Accidental Disengagement,0.0,,,Accidental Disengagement
 accidental,Accidental Disengagement,100.0,,,Accidental Disengagement
+vehicle put on the wrong signal,Failed to Slow,0.0,,,Merging Vehicle
+wrong signal,Failed to Follow Route,100.0,,,Incorrect Indicator
+incorrect indicator,Failed to follow Route,100.0,,,Incorrect Indicator
+the model drifted towards the oncoming lane,Failed for Lane Position,0.0,,,Towards Ongoing Lane
+accelerate junction,Failed to Accelerate,0.0,,,Towards Kerb
+slow bus stop,Failed to Slow,100.0,,, Bus at Bus Stop
+slow narrow road,Failed to Slow,100.0,,, Narrow Road
+failed to slow for roadworks, Failed to Slow,100.0,,, Roadworks
+slow roadworks,Failed to Slow,100.0,,, Roadworks
+not slowing down for a stop junction, Emergency Stop,0.0,,, Stop Junction
+didnt slow down for the stop sign,Failed to Slow,0.0,,,Merging Vehicle
+didnt come to a complete stop at the stop sign,Failed to remain Stopped,0.0,,,Stop Junction

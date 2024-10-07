@@ -1,4 +1,109 @@
 transcript,category,subcategory
+Failed to Accelerate Empty Zebra Crossing, Failed to Accelerate, Empty Zebra Crossing
+Failed to Accelerate Yellow Box, Failed to Accelerate, Yellow Box
+Failed to Accelerate Green Light, Failed to Accelerate, Green Light
+Failed to Accelerate Turning, Failed to Accelerate, Turning
+Failed to Accelerate Giveway, Failed to Accelerate, Giveway
+Failed to Accelerate Match Traffic Speed, Failed to Accelerate, Match Traffic Speed
+Failed to Accelerate Move Off in Traffic, Failed to Accelerate, Move Off in Traffic
+Failed to Accelerate Keep Clear Markings, Failed to Accelerate, Keep Clear Markings
+Failed to Accelerate To Speed Limit, Failed to Accelerate, To Speed Limit
+Failed to Accelerate Stop Junction, Failed to Accelerate, Stop Junction
+Failed to Accelerate Following Narrow Road, Failed to Accelerate, Following Narrow Road
+Failed to Slow Zebra Crossing, Failed to Slow, Zebra Crossing
+Failed to Slow Jaywalker, Failed to Slow, Jaywalker
+Failed to Slow Match Traffic Speed, Failed to Slow, Match Traffic Speed
+Failed to Slow Stopped Across Crossing, Failed to Slow, Stopped Across Crossing
+Failed to Slow Bus at Bus Stop, Failed to Slow, Bus at Bus Stop
+Failed to Slow Narrow Road, Failed to Slow, Narrow Road
+Failed to Slow Red Light, Failed to Slow, Red Light
+Failed to Slow Amber Light, Failed to Slow, Amber Light
+Failed to Slow Above Speed Limit, Failed to Slow, Above Speed Limit
+Failed to Slow Junction, Failed to Slow, Junction
+Failed to Slow Roadworks, Failed to Slow, Roadworks
+Failed to Slow Refuge Truck, Failed to Slow, Refuge Truck
+Failed to Slow Speed Bump, Failed to Slow, Speed Bump
+Failed to Slow Merging Vehicle, Failed to Slow, Merging Vehicle
+Failed to Slow Cyclist, Failed to Slow, Cyclist
+Failed to Slow Keep Clear Markings, Failed to Slow, Keep Clear Markings
+Failed to Slow Pedestrian, Failed to Slow, Pedestrian
+Failed to Slow Width Restriction, Failed to Slow, Width Restriction
+Failed to Slow Yellow Box, Failed to Slow, Yellow Box
+Failed to Slow Behind Stationary Vehicle, Failed to Slow, Behind Stationary Vehicle
+Failed to Slow Stop Junction, Failed to Slow, Stop Junction
+Failed to Remain Stopped Red Light, Failed to Remain Stopped, Red Light
+Failed to Remain Stopped Zebra Crossing, Failed to Remain Stopped, Zebra Crossing
+Failed to Remain Stopped Stationary Traffic, Failed to Remain Stopped, Stationary Traffic
+Failed to Remain Stopped Narrow Road, Failed to Remain Stopped, Narrow Road
+Failed to Remain Stopped Waiting to Turn, Failed to Remain Stopped, Waiting to Turn
+Failed to Remain Stopped Junction, Failed to Remain Stopped, Junction
+Failed to Remain Stopped Yellow Box, Failed to Remain Stopped, Yellow Box
+Failed to Remain Stopped Keep Clear Markings, Failed to Remain Stopped, Keep Clear Markings
+Failed to Remain Stopped Amber Light, Failed to Remain Stopped, Amber Light
+Failed to Maintain Speed Maintain the Speed Limit, Failed to Maintain Speed, Maintain the Speed Limit
+Failed to Maintain Speed Match the Traffic Speed, Failed to Maintain Speed, Match the Traffic Speed
+Failed to Maintain Speed Empty Zebra Crossing, Failed to Maintain Speed, Empty Zebra Crossing
+Failed to Maintain Speed Turning, Failed to Maintain Speed, Turning
+Failed to Maintain Speed Green Light, Failed to Maintain Speed, Green Light
+Failed to Maintain Speed Slowed Too Early, Failed to Maintain Speed, Slowed Too Early
+Failed to Follow Route Failed to Turn, Failed to Follow Route, Failed to Turn
+Failed to Follow Route Took Unplotted Turn, Failed to Follow Route, Took Unplotted Turn
+Failed to Follow Route Incorrect Lane for Upcoming Turn, Failed to Follow Route, Incorrect Lane for Upcoming Turn
+Failed to Follow Route Incorrect Lane to Continue Ahead, Failed to Follow Route, Incorrect Lane to Continue Ahead
+Failed to Follow Route Incorrect Indicator, Failed to Follow Route, Incorrect Indicator
+Failed to Overtake Bus, Failed to Overtake, Bus
+Failed to Overtake Single Vehicle, Failed to Overtake, Single Vehicle
+Failed to Overtake Line of Parked Vehicles, Failed to Overtake, Line of Parked Vehicles
+Failed to Overtake Cyclist, Failed to Overtake, Cyclist
+Failed to Overtake Motorcyclist, Failed to Overtake, Motorcyclist
+Failed to Overtake Bin Lorry, Failed to Overtake, Bin Lorry
+Failed to Overtake Ongoing Vehicle, Failed to Overtake, Ongoing Vehicle
+Failed to Overtake Double Parked Vehicle, Failed to Overtake, Double Parked Vehicle
+Failed to Overtake Other Static, Failed to Overtake, Other Static
+Failed to Overtake Other Dynamic, Failed to Overtake, Other Dynamic
+Failed for Early Turn Towards Oncoming Lane, Failed for Early Turn, Towards Oncoming Lane
+Failed for Early Turn Towards Ongoing Lane, Failed for Early Turn, Towards Ongoing Lane
+Failed for Early Turn Towards Cycle Lane, Failed for Early Turn, Towards Cycle Lane
+Failed for Early Turn Towards Bus Lane, Failed for Early Turn, Towards Bus Lane
+Failed for Early Turn Towards Cyclist, Failed for Early Turn, Towards Cyclist
+Failed for Early Turn Towards Motorcyclist, Failed for Early Turn, Towards Motorcyclist
+Failed for Early Turn Towards Kerb, Failed for Early Turn, Towards Kerb
+Failed for Early Turn Towards Pedestrian, Failed for Early Turn, Towards Pedestrian
+Failed for Early Turn Towards Vehicle, Failed for Early Turn, Towards Vehicle
+Failed for Early Turn Towards Static Obstacle, Failed for Early Turn, Towards Static Obstacle
+Failed for Early Turn Towards Other Static, Failed for Early Turn, Towards Other Static
+Failed for Early Turn Towards Other Dynamic, Failed for Early Turn, Towards Other Dynamic
+Failed for Late Turn Towards Oncoming Lane, Failed for Late Turn, Towards Oncoming Lane
+Failed for Late Turn Towards Ongoing Lane, Failed for Late Turn, Towards Ongoing Lane
+Failed for Late Turn Towards Cycle Lane, Failed for Late Turn, Towards Cycle Lane
+Failed for Late Turn Towards Bus Lane, Failed for Late Turn, Towards Bus Lane
+Failed for Late Turn Towards Cyclist, Failed for Late Turn, Towards Cyclist
+Failed for Late Turn Towards Motorcyclist, Failed for Late Turn, Towards Motorcyclist
+Failed for Late Turn Towards Kerb, Failed for Late Turn, Towards Kerb
+Failed for Late Turn Towards Pedestrian, Failed for Late Turn, Towards Pedestrian
+Failed for Late Turn Towards Vehicle, Failed for Late Turn, Towards Vehicle
+Failed for Late Turn Towards Static Obstacle, Failed for Late Turn, Towards Static Obstacle
+Failed for Late Turn Towards Other Static, Failed for Late Turn, Towards Other Static
+Failed for Late Turn Towards Other Dynamic, Failed for Late Turn, Towards Other Dynamic
+Failed for Lane Position Towards Oncoming Lane, Failed for Lane Position, Towards Oncoming Lane
+Failed for Lane Position Towards Ongoing Lane, Failed for Lane Position, Towards Ongoing Lane
+Failed for Lane Position Towards Cycle Lane, Failed for Lane Position, Towards Cycle Lane
+Failed for Lane Position Towards Bus Lane, Failed for Lane Position, Towards Bus Lane
+Failed for Lane Position Towards Cyclist, Failed for Lane Position, Towards Cyclist
+Failed for Lane Position Towards Motorcyclist, Failed for Lane Position, Towards Motorcyclist
+Failed for Lane Position Towards Kerb, Failed for Lane Position, Towards Kerb
+Failed for Lane Position Towards Pedestrian, Failed for Lane Position, Towards Pedestrian
+Failed for Lane Position Towards Vehicle, Failed for Lane Position, Towards Vehicle
+Failed for Lane Position Towards Static Obstacle, Failed for Lane Position, Towards Static Obstacle
+Failed for Lane Position Towards Other Static, Failed for Lane Position, Towards Other Static
+Failed for Lane Position Towards Other Dynamic, Failed for Lane Position, Towards Other Dynamic
+Failed for Diversion, Failed for Diversion, Failed for Diversion
+Emergency Services, Emergency Services, Emergency Services
+Close Proximity, Close Proximity, Close Proximity
+Uncommanded Disengagement, Uncommanded Disengagement, Uncommanded Disengagement
+Emergency Stop, Emergency Stop, Emergency Stop
+Accidental Disengagement, Accidental Disengagement, Accidental Disengagement
+End of Run, End of Run, End of Run
 The vehicle drifted into the next lane without signaling.,Failed for Lane Position,Towards Ongoing Lane
 The vehicle did not stop for a pedestrian crossing at a zebra crossing.,Failed to Slow,Zebra Crossing
 The vehicle ignored a yield sign and proceeded without caution.,Failed to remain Stopped,Junction
@@ -265,3 +370,15 @@ not slowing correctly to match the speed of the vehicle ahead,Failed to Slow,Mat
 uncommanded,Uncommanded Disengagement,Uncommanded Disengagement
 accidental,Accidental Disengagement,Accidental Disengagement
 accidental,Accidental Disengagement,Accidental Disengagement
+vehicle put on the wrong signal,Failed to Follow Route,Incorrect Indicator
+wrong signal,Failed to Follow Route,Incorrect Indicator
+incorrect indicator,Failed to follow Route,Incorrect Indicator
+the model drifted towards the oncoming lane,Failed for Lane Position,Towards Oncoming Lane
+accelerate junction,Failed to Accelerate,Giveway
+slow bus stop,Failed to Slow, Bus at Bus Stop
+slow narrow road,Failed to Slow, Narrow Road
+failed to slow for roadworks, Failed to Slow, Roadworks
+slow roadworks,Failed to Slow, Roadworks
+not slowing down for a stop junction,Failed to Slow,Stop Junction
+didnt slow down for the stop sign,Failed to Slow,Stop Junction
+didnt come to a complete stop at the stop sign,Failed to Slow,Stop Junction
