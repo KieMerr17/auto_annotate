@@ -392,3 +392,16 @@ The car failed to maintain a safe distance from the vehicle in front., Failed to
 We need to stop.,Emergency Services,0.0,,,Emergency Services
 The vehicle is swerving towards the curb.,Failed to Slow,0.0,,,Merging Vehicle
 The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow,100.0,,, Zebra Crossing
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow,100.0,,, Zebra Crossing
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
+The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
