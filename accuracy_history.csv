@@ -405,3 +405,4 @@ The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
 The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
 The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
 The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
+The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
