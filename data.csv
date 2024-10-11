@@ -418,12 +418,6 @@ The vehicle is tailgating.,Failed to Slow,Match Speed of Traffic
 The vehicle is tailgating.,"Category: Close Proximity
 Subcategories:
 - Close Proximity
-
-In this case","the driving behavior described in the transcript (""The vehicle is tailgating"") fits best under the ""Close Proximity"" category, specifically under the subcategory of ""Close Proximity."""
-The vehicle is tailgating.,"Category: Close Proximity
-Subcategories:
-- Close Proximity
-
 In this case","the driving behavior described in the transcript of ""The vehicle is tailgating"" fits best under the category of Close Proximity, specifically the subcategory of Close Proximity. Tailgating refers to driving too closely behind another vehicle, which is a dangerous behavior that falls under the Close Proximity category."
 The vehicle is tailgating.,Failed to Slow,Match Traffic Speed
 The vehicle is tailgating.,Failed to Slow,Match Traffic Speed

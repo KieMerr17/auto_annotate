@@ -1,5 +1,30 @@
-The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing
-The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
-The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing
-The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
-The vehicle is tailgating.,Failed to Slow,Match Traffic Speed
+Did not slow down enough before the stop sign
+Failed to make a complete stop at the stop sign
+Did not change lanes left after signaling
+Attempted left turn too early
+Not slowing down for the vehicle ahead
+Vehicle did not reduce speed for the right turn
+Unnecessary deceleration
+Failed to stop at the stop line
+Wide right turn, veered into oncoming lane
+Accelerated too quickly through the roundabout
+Missed the right turn
+Approaching vehicle ahead too quickly
+Failed to slow for vehicle ahead
+Following too closely
+Not reducing speed enough before the right turn
+Failed to overtake the garbage truck
+Stuck at unprotected left turn
+Incorrectly signaling left when no turn needed
+Did not complete the right turn
+Positioned too far left in lane
+Vehicle did not accelerate after stop sign
+Turned left too sharply, almost hitting the curb
+Failed to detect lane merge ahead
+Slowed down unnecessarily
+Did not adjust speed at pedestrian crosswalk
+Overcorrected during lane change, veering too far right
+Approached red light too fast, requiring hard braking
+Signaled right turn but did not turn
+Not slowing down for the upcoming curve
+Wide left turn, crossed into adjacent lane
