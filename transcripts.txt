@@ -1,1 +1,5 @@
-The vehicle is tailgating.
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
+The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing
+The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light
+The vehicle is tailgating.,Failed to Slow,Match Traffic Speed

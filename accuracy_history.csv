@@ -406,3 +406,13 @@ The vehicle is ignoring the pedestrian.,Failed to Slow,0.0,,,Merging Vehicle
 The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,100.0,,,Green Light
 The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
 The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
+The vehicle is tailgating.,Failed to Slow,100.0,,,Match Traffic Speed
+failed to move off,Failed to Accelerate,100.0,,,Green Light
+"The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing",Failed to Slow,100.0,,,Pedestrian on Zebra Crossing
+"The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light",Failed to Maintain Speed,0.0,,,Green Light
+"The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing",Failed to Slow,100.0,,,Pedestrian on Zebra Crossing
+"The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light",Failed to Maintain Speed,100.0,,,Green Light
+"The vehicle is tailgating.,Failed to Slow,Match Traffic Speed",Failed to Slow,100.0,,,Match Speed of Traffic
+"The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing",Failed to Slow,100.0,,,Pedestrian on Zebra Crossing
+"The vehicle is not accelerating as it should while approaching a green light.,Failed to Maintain Speed,Green Light",Failed to Maintain Speed,100.0,,,Green Light
+"The car ignored the zebra crossing and did not yield to pedestrians.,Failed to Slow, Zebra Crossing",Failed to Slow,100.0,,,Pedestrian on Zebra Crossing
