@@ -1,0 +1,61 @@
+Transcript,Categorization
+Did not slow down enough before the stop sign,"Category: Failed to Slow
+Subcategory: Stop Sign"
+Failed to make a complete stop at the stop sign,"Category: Failed to Remain Stopped
+Subcategory: Stop Sign"
+Did not change lanes left after signaling,"Category: Lane Change
+Subcategory: Lane Change"
+Attempted left turn too early,"Category: Failed for Early Turn
+Subcategory: Towards Kerb"
+Not slowing down for the vehicle ahead,"Category: Failed to Slow
+Subcategory: Following Another Vehicle"
+Vehicle did not reduce speed for the right turn,"Category: Failed to Follow Route
+Subcategory: Failed to Turn into Plotted Turn"
+Unnecessary deceleration,"Category: Failed to Slow
+Subcategory: Slowed Too Early"
+Failed to stop at the stop line,"Category: Failed to Remain Stopped
+Subcategory: Stop Line"
+"Wide right turn, veered into oncoming lane","Category: Failed for Late Turn
+Subcategory: Towards Oncoming Lane"
+Accelerated too quickly through the roundabout,"Category: Failed for Early Turn
+Subcategory: Towards Roundabout"
+Missed the right turn,"Category: Failed to Follow Route
+Subcategory: Failed to Turn into Plotted Turn"
+Approaching vehicle ahead too quickly,"Category: Failed to Slow
+Subcategory: Approaching Vehicles"
+Failed to slow for vehicle ahead,"Category: Failed to Slow
+Subcategory: Oncoming Vehicles"
+Following too closely,"Category: Failed to Slow
+Subcategory: Following too closely"
+Not reducing speed enough before the right turn,"Category: Failed to Maintain Speed
+Subcategory: Slowed Too Early"
+Failed to overtake the garbage truck,"Category: Failed to Overtake
+Subcategory: Failed to Overtake the garbage truck"
+Stuck at unprotected left turn,"Category: Failed to Follow Route
+Subcategory: Incorrect Indicator"
+Incorrectly signaling left when no turn needed,"Category: Failed to Follow Route
+Subcategory: Incorrect Indicator"
+Did not complete the right turn,"Category: Failed to Follow Route
+Subcategory: Failed to Turn into Plotted Turn"
+Positioned too far left in lane,"Category: Failed for Lane Position
+Subcategory: Lane Drift"
+Vehicle did not accelerate after stop sign,"Category: Failed to Accelerate
+Subcategory: Stop Sign"
+"Turned left too sharply, almost hitting the curb","Category: Failed for Early Turn
+Subcategory: Towards Kerb"
+Failed to detect lane merge ahead,"Category: Failed to Follow Route
+Subcategory: Failed to Turn into Plotted Turn"
+Slowed down unnecessarily,"Category: Failed to Slow
+Subcategory: Slowed Too Early"
+Did not adjust speed at pedestrian crosswalk,"Category: Failed to Slow
+Subcategory: Pedestrian on Zebra Crossing"
+"Overcorrected during lane change, veering too far right","Category: Failed for Late Turn
+Subcategory: Towards Kerb"
+"Approached red light too fast, requiring hard braking","Category: Failed to Slow
+Subcategory: Red Light"
+Signaled right turn but did not turn,"Category: Failed to Follow Route
+Subcategory: Failed to Turn into Plotted Turn"
+Not slowing down for the upcoming curve,"Category: Failed to Slow
+Subcategory: Approaching Curve"
+"Wide left turn, crossed into adjacent lane","Category: Failed for Late Turn
+Subcategory: Towards Oncoming Lane"
